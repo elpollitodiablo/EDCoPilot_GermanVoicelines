@@ -356,7 +356,7 @@ REPLACE
 
 @ExoAtSuitableDistance
 REPLACE
-(notranslate)Mindestabstand erreicht.
+(notranslate)Mindestabstand zur letzten Probe erreicht.
 		
 @ExoFirstScanOfSpeciesOnNewBody
 REPLACE

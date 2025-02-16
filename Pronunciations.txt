@@ -20,7 +20,6 @@ Commander RAZZAFRAG=Commander Razzafrag|my creator|Commander Razzafrag, my creat
 <!--Add your own entries below, and have fun with it!
 <!--
 Kernic=Kernik
-Friday=Fraidey
 (space)1(space)=(space)ein(space)
 bodies=planets
 Bodies=planets
@@ -31,4 +30,12 @@ scoopable=tankable
 Noten=Credits
 noten=credits
 eins biologisches=ein biologisches
+eins weitere=eine weitere
+1 weitere=eine weitere
 1 biologisches=ein biologisches
+-=(space)
+Bindestrich=(space)
+Dash=(space)
+dash=(space)
+zero=0
+Zero=0
