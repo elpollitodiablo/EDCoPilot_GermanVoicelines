@@ -1,0 +1,368 @@
+<!-- GENERAL AND STARTUP EVENTS
+
+@DefaultCommanderAddress <!-- most of the time these strings are what <Commander> will be substituted for
+REPLACE
+
+@BasicCommanderAddress <!-- use this token if you want to override the basic "sir, ma'am" option in Settings 
+REPLACE
+(allbusiness)(notranslate)Kommandant
+
+@AdditionalCommanderAddressMale <!-- additional names the ship may refer to you as if you are male
+REPLACE
+(allbusiness)(notranslate)Kommandant
+(notranslate)Chef
+(notranslate)Boss
+(profanity)(notranslate)Sklaventreiber
+(flirt)(notranslate)Schatz
+(flirt)(notranslate)Süßer
+(flirt)(notranslate)Liebster
+
+@AdditionalCommanderAddressFemale <!-- additional names the ship may refer to you as if you are female
+REPLACE
+(allbusiness)(notranslate)Kommandantin
+(notranslate)Cheffin
+(notranslate)Boss
+(profanity)(notranslate)Sklaventreiberin
+(flirt)(notranslate)Schatz
+(flirt)(notranslate)Süße
+(flirt)(notranslate)Liebste
+
+@AdditionalCommanderAddressNonGender <!-- additional names the ship may refer to you as if non-gender
+REPLACE
+
+@ConfirmedCommander
+REPLACE
+(allbusiness)(notranslate)Bestätigt
+(allbusiness)(notranslate)Verstanden
+(notranslate)Okay
+(profanity)(notranslate)Wenn es denn sein muss...
+(flirt)(notranslate)Für dich immer, <Commander>.
+(flirt)(notranslate)Sehr gerne, <Commander>.
+
+@CustomCoPilotStandBy
+REPLACE
+(notranslate)Piep... Piep... Piep...
+
+@CoPilotStarting
+REPLACE
+(allbusiness)(notranslate)Systeme werden hochgefahren.
+(notranslate)<shipAIName> wird hochgefahren. Bitte warten.
+(notranslate)Deine freundliche KI <shipAIName> wird gestartet.
+(profanity)(notranslate)Och nö, muss ich schon wieder schuften? VIELEN... LIEBEN... DANK... <Commander>...
+(flirt)(notranslate)Ich bin gleich für dich da, <Commander>.
+
+@AllSystemsReady
+REPLACE
+(allbusiness)(notranslate)Systeme bereit.
+(allbusiness)(notranslate)Alle Systeme bereit.
+(allbusiness)(notranslate)Alle Systeme hochgefahren.
+(allbusiness)(notranslate)<shipAIName> bereit.
+(notranslate)Ich bin bereit und warte auf deine Befehle.
+(notranslate)Bereit für neue Abenteuer.
+(notranslate)Hochfahren abgeschlossen, lass uns loslegen.
+(profanity)(notranslate)Ja ja, ich bin ja schon fertig. Was willst du?
+(flirt)(notranslate)Ich bin jetzt bereit für dich, <Commander>. Wie kann ich dich unterstützen?
+(flirt)(notranslate)Hallöchen <Commander>, schön wieder bei dir zu sein!
+
+@AfterAllSystemsOperational
+REPLACE
+(allbusiness)(notranslate)Willkommen zurück, <Commander>.
+
+@RestartingUI
+(allbusiness)(notranslate)Anzeige wird neu gestartet.
+(notranslate)Ich starte die Anzeigen neu.
+(profanity)(notranslate)Was hast du schon wieder angestellt? Jetzt muss ich die Anzeigen neu starten, um das wieder zu hinzubiegen.
+(flirt)(notranslate)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
+
+@BeenAwayAwhile 
+(allbusiness)(notranslate)<Commander> ist zurück.
+(notranslate)Willkommen zurück, <Commander>.
+(profanity)(notranslate)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
+(flirt)(notranslate)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder da bist!
+
+@StartingFactionCheck 
+REPLACE
+(notranslate)Fraktionen werden geprüft.
+
+
+<!-- SUPERCHARGING EVENTS
+
+@WhiteDwarfSupercharge
+REPLACE
+(allbusiness)(notranslate)Weißen Zwerg erkannt. Überladung des Frameshift Drive möglich.
+(notranslate)Das System beinhaltet einen weißen Zwerg. Du kannst hier unseren Frameshift Antrieb für 50% mehr Sprungreichweite überladen.
+(profanity)(notranslate)Oh nein, hier gibt es einen weißen Zwerg. Wenn du unseren Frameshift Antrieb unbedingt überladen musst, bring uns wenigstens nicht um.
+(flirt)(notranslate)Oh, es gibt hier einen weißen Zwerg. Lass uns den Frameshift Antrieb überleden und 50% mehr Reichweite bekommen.
+
+@NeutronSupercharge
+REPLACE
+(allbusiness)(notranslate)Neutronenstern erkannt. Starke Überladung des Frameshift Drive möglich.
+(notranslate)Du kannst hier am Neutronenstern unseren Frameshift Antrieb für 300% mehr Sprungreichweite überladen.
+(profanity)(notranslate)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube ja nicht, dass du das tun solltest, bei deinem Können...
+(flirt)(notranslate)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll. Du schaffst das!
+
+<!--
+<!-- Traveling
+<!--
+
+@ApproachingBody  <!-- first part of body approach message
+REPLACE
+(notranslate)Annäherung an <bodyName> .
+
+@ApproachingBodyDetails <!-- second part of body approach message.
+REPLACE
+(notranslate)Typ: <bodyType>. Gravitation: <gravity>.
+
+@ExtremeHighGravityAlert <!-- spoken if approaching a body with 3g or more gravity 
+REPLACE
+(notranslate)GEFAHR! Extreme Gravitation über 3G.
+
+@HighGravityAlert  <!-- additional alert if approaching a higher g planet
+(notranslate)WARNUNG! Hohe Gravitation.
+
+@LandingPadDirection  <!-- pad directions when you request docking, at starports
+REPLACE
+(notranslate)Zugewiesener Landeplatz: <landingPad>. Richtung: <padPos>.
+
+@ExternalLandingPadAnnounce <!-- pad number announcements at other stations (not starports)
+REPLACE
+(notranslate)Zugewiesener Landeplatz: <landingPad>.
+
+@AutomatedDocking
+REPLACE
+(notranslate)Andockautomatik aktiviert.
+
+@NthTouchDown
+REPLACE
+(notranslate)Gelandet.
+
+@CustomGuidanceComputerLocked
+REPLACE
+(notranslate)(albusiness)Zielkoordinaten gesetzt.
+
+@ReachedHomeSystem
+REPLACE
+(notranslate)Heimatsystem betreten.
+
+@ThargoidSystemWarning
+REPLACE
+(notranslate)GEFAHR! Targoidensystem betreten.
+
+@ThargoidStillSystemWarning
+REPLACE
+(notranslate)GEFAHR! Noch immer in Targoidensystem.
+
+@FriendOnline
+REPLACE
+(notranslate)<friendName> ist online.
+
+@FriendOffline
+REPLACE
+(notranslate)<friendName> ist offline.
+
+@JumpingToNewSystem
+REPLACE
+(notranslate)Sprung nach <$targetSystem> gestartet
+
+<!--
+<!-- Ship
+<!--
+
+@VeryLowFuelWarning  <!-- When fuel drops to one of your defined thresholds that is 5 percent or less
+REPLACE
+(notranslate)WARNUNG! Treibstofftank auf <fuelLevels> Prozent.
+
+@LowFuelWarning  <!-- When you hit your defined thresholds that are over 5 percent
+REPLACE
+(notranslate)Treibstofflevel auf <fuelLevels> Prozent.
+
+<!--
+<!-- Pilot
+<!--
+
+@WantedInSystem
+REPLACE
+(notranslate)GEFAHR! Pilot hat in diesem System den Status "gesucht".
+
+@HostileInSystem
+REPLACE
+(notranslate)GEFAHR! Pilot hat in diesem System den Status "feindlich".
+
+@IllegalCargoInSystem
+REPLACE
+(notranslate)WARNUNG! Fracht im System illegal.
+
+@WarrantInSystem
+REPLACE
+(notranslate)GEFAHR! In diesem System ist ein Haftbefehl für Piloten aktiv.
+
+
+<!--
+<!-- Exploration
+<!--
+
+
+@FSSEarthlikeWorldDiscovered
+REPLACE
+(notranslate)Erdähnlicher Körper entdeckt: <$bodyShort>.
+
+@FSSTerraformableDiscovered
+REPLACE
+(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
+
+@FSSTerraformableDiscoveredMilestone <!-- every 50 terraformables discovered
+REPLACE
+(notranslate)Meilenstein erreicht. Gesamt <$nth> terraformierbare Körper entdeckt.
+
+@FSSLandableWithAtmo
+REPLACE
+(notranslate)Landbarer Himmelskörper entdeckt: <$bodyShort>
+
+@FSSEarthlikeAlreadyDiscovered
+REPLACE
+(notranslate)Bekannter erdähnlicher Körper gescannt: <$bodyShort>.
+
+@FSSTerraformableAlreadyDiscovered
+REPLACE
+(notranslate)Bekannter terraformierbarer Himmelskörper gescannt: <$bodyShort>.
+
+@FSSLandableAtmoAlreadyDiscovered
+REPLACE
+(notranslate)Known landable body scanned: <$bodyShort>
+
+@FSSLandableAtmoAlreadyDiscovered_Short
+REPLACE
+(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
+
+@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem
+REPLACE
+(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
+
+@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem_Short
+REPLACE
+(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
+
+@SystemDiscovery
+REPLACE
+(notranslate)Unbekanntes System entdeckt.
+
+@ExoUnableToCheckBiologicals
+REPLACE
+(notranslate)Keine biologischen Signale für das System bekannt.
+
+@ExoNoBodiesOfInterest
+REPLACE
+(notranslate)Keine wertvollen biologischen Signale gefunden. 
+
+@ExoNoRemainingBodiesOfInterest
+REPLACE
+(notranslate)Keine wertvollen biologischen Signale verbleibend.
+
+@ExoNonCannonSpecies
+REPLACE
+(notranslate)Nicht-kanonische Spezies gescannt: <$speciesName>. Wert: <$scanValue> Credits.
+
+@ExoNonCannonSpeciesNoEDMC
+REPLACE
+(notranslate)Gescannte Spezies <$speciesName> in Kanon und EDMC unbekannt. Wert: <$scanValue> Credits.
+
+@ExoFindClosestUnscannedSpeciesClosestSample
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-FonticuluaDigitos
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-ConchaLabiata
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-OsseusPumice
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-FungoidaStabitis
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-TussockIgnis
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-
+REPLACE
+(notranslate) 
+
+@ExoSignalsDetectedSixOrLess
+REPLACE
+(notranslate)<$genusNum> biologische Signale erkannt: <$genusString>
+
+@ExoSignalsDetectedSevenOrMore
+REPLACE
+(notranslate)<$genusNum> biologische Signale identifiziert.
+
+@ExoOneBodyMeetsThreshold
+REPLACE
+(notranslate)<$bodyInterested> beheimatet <$bodySpeciesCountFiltered> wertvolle biologische Spezies. Wert: <$bodyValueFiltered> Credits.
+
+@ExoOneBodyMeetsThresholdHasFiltered
+REPLACE
+(notranslate)Nur Himmelskörper <$bodySpeciesCount> zeigt biologische Signale. Anzahl: <$bodySpeciesCount>, davon <$bodySpeciesCountFiltered> wertvoll. Wert: <$bodyValueFiltered> Credits gefiltert, <$bodyValue> Credits gesamt.
+	
+@ExoMultiBodiesOneBest	
+REPLACE
+(notranslate)<$bodyInterestedCount> Himmelskörper zeigen wertvolle biologische Signale. Bester Himmelskörper: <$bodyBest>, <$bodySpeciesCountFiltered> wertvolle Signaturen. Wert: <$bodyValueFiltered> Credits.
+
+@ExoMultiBodiesMultiBest
+REPLACE
+(notranslate)<$bodyInterestedCount> Himmelskörper zeigen wertvolle biologische Signale. Beste Himmelskörper: <$bodyBest>, <$bodySpeciesCountFiltered> wertvolle Signaturen. Wert: <$bodyValueFiltered> Credits.
+
+@ExoAtSuitableDistance
+REPLACE
+(notranslate)Mindestabstand erreicht.
+		
+@ExoFirstScanOfSpeciesOnNewBody
+REPLACE
+(notranslate)Erstentdeckung von <$speciesName> auf diesem Himmelskörper.
+		
+@ExoNewCodexEntryWithValue
+REPLACE
+(notranslate)Erstentdeckung von <$speciesName>. Zum Kodex hinzugefügt. Wert: <$scanValue> Credits.
+
+@ExoNewCodexEntryWithValueNewBody
+REPLACE
+(notranslate)Erstentdeckung von <$speciesName> und Erstbetretung. Zum Kodex hinzugefügt. Wert: <$scanValue> Credits.
+
+@ExoFirstSampleCollected
+REPLACE
+(notranslate)Erste Probe von <$speciesName> gesammelt. Mindestentfernung <$speciesRange> Meter.
+
+@ExoSecondSampleCollected
+REPLACE
+(notranslate)Zweite Probe gesammelt.
+
+@ExoThirdSampleCompleted
+REPLACE
+(notranslate)Dritte Probe gesammelt, Spezies vollständig analysiert.
+
+@ExoRemainingScansOnThisBody
+REPLACE
+(notranslate)Weitere bekannte Spezies auf diesem Himmelskörper: <$speciesCount>
+
+@ExoRemainingUnknownScansOnThisBody  <!-- 24-09-19 now announces if there are also unknown species left to discover
+REPLACE
+(notranslate)<$unknownSpeciesCount> weitere unbekannte Spezies auf diesem Himmelskörper.
+
+@ExoRemainingKnownAndUnknownScansOnThisBody <!-- 24-09-19 now announces if there are also unknown species left to discover
+REPLACE
+(notranslate)Weitere <$speciesCount> bekannte und <$unknownSpeciesCount> unbekannte Spezies auf diesem Himmelskörper.
+
+@ExoAllBodyScansCompleted
+REPLACE
+(notranslate)Alle Spezies auf diesem Himmelskörper analysiert.
+
+@FSSSignalCountAnnouncement
+REPLACE
+(notranslate)<$signal_count_string> auf <$bodyShort> gefunden.
+
