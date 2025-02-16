@@ -1,13 +1,31 @@
+<!-- Deutsche Voicelines für EDCoPilot
+<!--
+<!-- Verwende immer REPLACE vor einem Event.
+<!-- Verwende im Normalfall immer (notranslate) vor der zu sprechenden Nachricht, damit diese nicht an den
+<!-- Übersetzungsservice geschickt wird und Tokens gespart werden. Eventuell werden nicht-konfigurierbare Platzhalter dann 
+<!-- aber nicht übersetzt.
+<!-- 
+<!-- Weitere Tags, welche vor die Nachricht geschrieben werden können (werden beeinfluss von Einstellungen > Ship AI Personality):
+<!-- (allbusiness) Wenn "All Busniess Mode" AKTIV ist, dann werden NUR diese Zeilen verwendet.
+<!-- (profanity) Wenn der "Profanity Mode" AKTIV ist, dann werden je nach Einstellung und ZUSÄTZLICH diese Zeilen verwendet.
+<!-- (flirt) Wenn der "Sweetheat Mode" AKTIV ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
+<!-- (alcohol) Wenn "Alcohol Free" INAKTIV ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
+<!-- (vegan) Wenn "Vegan" INAKTIV ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
+<!-- (dislikesmining) Wenn "Dislikes Mining" AKTIV ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
+<!-- (crime_neutral) Wenn "Attitude to committing crimes" NEUTRAL ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
+<!-- (crime_dislike) Wenn "Attitude to committing crimes" DISLIKES ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
+<!-- (crime_like) Wenn "Attitude to committing crimes" LIKES ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
+
 <!-- GENERAL AND STARTUP EVENTS
 
-@DefaultCommanderAddress <!-- most of the time these strings are what <Commander> will be substituted for
+@DefaultCommanderAddress <!-- wird die meiste Zeit für den Platzhalter <Commander> verwendet.
 REPLACE
 
-@BasicCommanderAddress <!-- use this token if you want to override the basic "sir, ma'am" option in Settings 
+@BasicCommanderAddress <!-- Überschreibt die "sir, ma'am" Option in den Einstellungen
 REPLACE
 (allbusiness)(notranslate)Kommandant
 
-@AdditionalCommanderAddressMale <!-- additional names the ship may refer to you as if you are male
+@AdditionalCommanderAddressMale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn männlich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
 (allbusiness)(notranslate)Kommandant
 (notranslate)Chef
@@ -17,7 +35,7 @@ REPLACE
 (flirt)(notranslate)Süßer
 (flirt)(notranslate)Liebster
 
-@AdditionalCommanderAddressFemale <!-- additional names the ship may refer to you as if you are female
+@AdditionalCommanderAddressFemale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn weiblich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
 (allbusiness)(notranslate)Kommandantin
 (notranslate)Cheffin
@@ -27,10 +45,10 @@ REPLACE
 (flirt)(notranslate)Süße
 (flirt)(notranslate)Liebste
 
-@AdditionalCommanderAddressNonGender <!-- additional names the ship may refer to you as if non-gender
+@AdditionalCommanderAddressNonGender <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn kein Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
 
-@ConfirmedCommander
+@ConfirmedCommander <!-- Als Bestätigung auf Befehle und Einstellungsänderungen
 REPLACE
 (allbusiness)(notranslate)Bestätigt
 (allbusiness)(notranslate)Verstanden
@@ -39,11 +57,7 @@ REPLACE
 (flirt)(notranslate)Für dich immer, <Commander>.
 (flirt)(notranslate)Sehr gerne, <Commander>.
 
-@CustomCoPilotStandBy
-REPLACE
-(notranslate)Piep... Piep... Piep...
-
-@CoPilotStarting
+@CoPilotStarting <!-- Wird abgespielt, wenn EDCoPilot gestartet wird.
 REPLACE
 (allbusiness)(notranslate)Systeme werden hochgefahren.
 (notranslate)<shipAIName> wird hochgefahren. Bitte warten.
@@ -51,7 +65,7 @@ REPLACE
 (profanity)(notranslate)Och nö, muss ich schon wieder schuften? VIELEN... LIEBEN... DANK... <Commander>...
 (flirt)(notranslate)Ich bin gleich für dich da, <Commander>.
 
-@AllSystemsReady
+@AllSystemsReady <!-- Wird abgespielt, wenn alle Systeme von EDCoPilot geladen wurden.
 REPLACE
 (allbusiness)(notranslate)Systeme bereit.
 (allbusiness)(notranslate)Alle Systeme bereit.
@@ -64,44 +78,66 @@ REPLACE
 (flirt)(notranslate)Ich bin jetzt bereit für dich, <Commander>. Wie kann ich dich unterstützen?
 (flirt)(notranslate)Hallöchen <Commander>, schön wieder bei dir zu sein!
 
-@AfterAllSystemsOperational
+@AfterAllSystemsOperational <!-- Wird an @AllSystemsReady angehängt.
 REPLACE
 (allbusiness)(notranslate)Willkommen zurück, <Commander>.
 
-@RestartingUI
+@RestartingUI <!-- Wenn die Programmoberfläche neu geladen wird.
 (allbusiness)(notranslate)Anzeige wird neu gestartet.
 (notranslate)Ich starte die Anzeigen neu.
 (profanity)(notranslate)Was hast du schon wieder angestellt? Jetzt muss ich die Anzeigen neu starten, um das wieder zu hinzubiegen.
 (flirt)(notranslate)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
 
-@BeenAwayAwhile 
+@BeenAwayAwhile <!-- Zusätzliche Begrüßung, wenn man EDCoPilot am Vortag nicht gestartet hatte.
 (allbusiness)(notranslate)<Commander> ist zurück.
 (notranslate)Willkommen zurück, <Commander>.
 (profanity)(notranslate)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
 (flirt)(notranslate)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder da bist!
 
-@StartingFactionCheck 
+@StartingFactionCheck <!-- Nach dem Start, wenn EDCoPilot einen Fraktionscheck macht.
 REPLACE
 (notranslate)Fraktionen werden geprüft.
 
 
 <!-- SUPERCHARGING EVENTS
 
-@WhiteDwarfSupercharge
+@WhiteDwarfSupercharge <!-- Wird bei Ankunft im System abgespielt, wenn ein überladbarer weißer Zwerg vorhanden ist.
 REPLACE
 (allbusiness)(notranslate)Weißen Zwerg erkannt. Überladung des Frameshift Drive möglich.
 (notranslate)Das System beinhaltet einen weißen Zwerg. Du kannst hier unseren Frameshift Antrieb für 50% mehr Sprungreichweite überladen.
 (profanity)(notranslate)Oh nein, hier gibt es einen weißen Zwerg. Wenn du unseren Frameshift Antrieb unbedingt überladen musst, bring uns wenigstens nicht um.
 (flirt)(notranslate)Oh, es gibt hier einen weißen Zwerg. Lass uns den Frameshift Antrieb überleden und 50% mehr Reichweite bekommen.
 
-@NeutronSupercharge
+@NeutronSupercharge <!-- Wird bei Ankunft im System abgespielt, wenn ein überladbarer Neutronenstern vorhanden ist.
 REPLACE
 (allbusiness)(notranslate)Neutronenstern erkannt. Starke Überladung des Frameshift Drive möglich.
 (notranslate)Du kannst hier am Neutronenstern unseren Frameshift Antrieb für 300% mehr Sprungreichweite überladen.
 (profanity)(notranslate)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube ja nicht, dass du das tun solltest, bei deinem Können...
 (flirt)(notranslate)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll. Du schaffst das!
 
-<!--
+<!-- TRADE & MARKET EVENTS
+
+@TradeMarketHasChanged <!-- Nach einer Marktaktualisierung sind nicht mehr alle Gegenstände verfügbar oder haben sich geändert.
+REPLACE
+(allbusiness)(notranslate)Marktübersicht aktualisiert. Es gab Änderungen in der Verfügbarkeit.
+(notranslate)Die Marktübersicht wurde aktualisiert. Für unsere Gegenstände sind leider nicht mehr alle Angebote oder Anfragen verfügbar.
+(profanity)(notranslate)Du warst mal wieder zu langsam. Der Markt war schneller als du und die Lage für einige Gegenstände hat sich geändert.
+(flirt)(notranslate)Oh Mist, <commander>, unser Plan geht nicht mehr auf. Für einige geplante Gegenstände hat sich die Marktsituation geändert.
+
+@TradeMaximisingProfit <!-- Wenn eine Handelsroute neu berechnet wird zu Verbesserung des Profits.
+REPLACE
+(allbusiness)(notranslate)Handelsroute für erhöhten Profit neu berechnet.
+(notranslate)Bessere Verdienstmöglichkeiten erkannt. Handelsroute wird neu berechnet.
+(profanity)(notranslate)Verdammt, schon wieder hat sich der Markt geändert. Jetzt muss ich die blöde Route neu berechnen, damit du mehr verdienst.
+(flirt)(notranslate)Ich habe gerade gesehen, dass wir noch mehr verdienen können, <commander>. Lass mich die Route für dich neu berechnen.
+
+@TradeAllCommoditiesOK <!-- Wenn der lokale Markt weiterhin okay ist.
+REPLACE
+(allbusiness)(notranslate)Lokale Marktsituation nach Plan.
+(notranslate)Der lokale Markt entspricht noch immer unseren Berechnungen. Wir können fortfahren.
+(profanity)(notranslate)Ein Wunder, dein Plan scheint zu funktionieren. Mal schauen, ob das bis zu unserer Ankunft so bleibt.
+(flirt)(notranslate)Super, dein Plan geht auf, <commander>. Ab zum Markt und dann regnet es Credits!
+
 <!-- Traveling
 <!--
 
