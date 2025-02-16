@@ -1,0 +1,34 @@
+<!-- You can override how words or strings are pronounced by adding entries to this file
+<!--
+<!-- Entries should be in the format <initialString>=<targetString>
+<!-- Note that string matching is case and space sensitive
+<!--
+<!-- Example entry:
+EDCoPilot=E D CoPilot
+<!--
+<!-- You can also use the string '(space)' in place of a space, to make it more obvious that you are matching spaces, like so:
+(space)THE(space)=(space)The(space)
+<!--
+<!-- You can also enter alternative strings for the target, delimited by a |
+<!-- and EDCoPilot will randomly pick which one to substitute when it encounters the string in a phrase
+<!--
+<!-- Example entry:
+Commander RAZZAFRAG=Commander Razzafrag|my creator|Commander Razzafrag, my creator, 
+<!--This will pick one of the 3 targets strings provided whenever it is asked to say Commander Razzafrag
+<!--Note that by including the same initialString in the list of targetString options, sometimes it will not be changed
+<!--
+<!--Add your own entries below, and have fun with it!
+<!--
+Kernic=Kernik
+Friday=Fraidey
+(space)1(space)=(space)ein(space)
+bodies=planets
+Bodies=planets
+Body=planet
+body=planet
+Scoopable=tankable
+scoopable=tankable
+Noten=Credits
+noten=credits
+eins biologisches=ein biologisches
+1 biologisches=ein biologisches
