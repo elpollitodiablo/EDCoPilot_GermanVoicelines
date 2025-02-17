@@ -245,53 +245,49 @@ REPLACE
 (profanity)(notranslate)Wieder zu spät zur Party, wie es scheint. Körper <$bodyShort> ist zwar erdähnlich, aber natürlich hat den schon jemand vor dir entdeckt.
 (flirt)(notranslate)Schade, der erdähnliche Körper <$bodyShort> wurde schon von einem anderen Kommander entdeckt.
 
-@FSSLandableWithAtmo
+@FSSLandableWithAtmo <!-- Unentdeckter landbarer Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(notranslate)Landbarer Himmelskörper entdeckt: <$bodyShort>
-(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
-(notranslate)
-(profanity)(notranslate)
-(flirt)(notranslate)
+(allbusiness)(notranslate)Unbekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
+(notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar, hat eine Atmosphäre und bisher unentdeckt.
+(profanity)(notranslate)Du bis ein unverdienter Glückspilz. Köper <$bodyShort> ist landbar und bisher unbekannt. Dazu noch eine Atmosphäre, wirklich mehr Glück als Verstand...
+(flirt)(notranslate)Du hast wieder einen unbekannten Körper entdeckt! Und Körper <$bodyShort> ist sogar landbar mit einer Atmosphäre!
 
-@FSSLandableAtmoAlreadyDiscovered
+@FSSLandableAtmoAlreadyDiscovered <!-- Bereits bekannter landbarer Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(notranslate)Known landable body scanned: <$bodyShort>
-(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
-(notranslate)
-(profanity)(notranslate)
-(flirt)(notranslate)
+(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
+(notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre, leider aber schon entdeckt.
+(profanity)(notranslate)Körper <$bodyShort> ist landbar und hat eine Atmosphäre? Wenn er nicht schon entdeckt wäre hätte ich dich fast für deine Leistung gelobt. Ist er aber.
+(flirt)(notranslate)Auch wenn jemand schneller war, trotzdem toll, dass du den landbaren Körper <$bodyShort> mit Atmosphäre entdeckt hast.
 
-@FSSLandableAtmoAlreadyDiscovered_Short
+@FSSLandableAtmoAlreadyDiscovered_Short <!-- Kurzversion. Bereits bekannter landbarer Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
-(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
 (notranslate)
-(profanity)(notranslate)
-(flirt)(notranslate)
+(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre: <$bodyShort>
+(notranslate)Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre, leider aber schon entdeckt.
+(profanity)(notranslate)Tja, <$bodyShort> ist zwar landbar und hat eine Atmosphäre, aber schon entdeckt. Pech.
+(flirt)(notranslate)<$bodyShort> ist zwar landbar und hat eine Atmosphäre, aber jemand war vor uns hier. Schade.
 
-@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem
+@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem <!-- Bereits bekannter landbarer Körper in einem bewohnten System gescannt. Variablen: <$bodyShort>
 REPLACE
-(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
-(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
-(notranslate)
-(profanity)(notranslate)
-(flirt)(notranslate)
+(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
+(notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre. Das System ist aber bereits besiedelt und der Körper bekannt.
+(profanity)(notranslate)Kein Grund den Helden zu spielen. Den landbaren Körper <$bodyShort> mit Atmosphäre kennt in diesem System jeder Bewohner.
+(flirt)(notranslate)Ich glaube nicht, dass die Bewohner des Systems den landbaren Körper <$bodyShort> mit Atmosphäre nicht kennen. Aber mach auf jeden Fall weiter.
 
-@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem_Short
+@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem_Short <!-- Bereits bekannter landbarer Körper in einem bewohnten System gescannt. Variablen: <$bodyShort>
 REPLACE
-(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
-(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
-(notranslate)
-(profanity)(notranslate)
-(flirt)(notranslate)
+(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre in bewohntem System: <$bodyShort>
+(notranslate)Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre. Das System ist bewohnt.
+(profanity)(notranslate)Was die Bewohner hier schon vor dir wussten: <$bodyShort> ist landbar und hat eine Atmosphäre.
+(flirt)(notranslate)Laut Scanner und den Bewohnern des Systems ist <$bodyShort> ist landbar und hat eine Atmosphäre.
 
-@FSSSignalCountAnnouncement
+@FSSSignalCountAnnouncement <!-- Gefundene Signale auf einem Körper. Variablen: <$signal_count_string>, <$bodyShort>
 REPLACE
-(notranslate)<$signal_count_string> auf <$bodyShort> gefunden.
-(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
 (notranslate)
-(profanity)(notranslate)
-(flirt)(notranslate)
+(allbusiness)(notranslate)<$signal_count_string> auf Körper <$bodyShort>.
+(notranslate)Unsere Scans zeigen <$signal_count_string> auf Körper <$bodyShort>.
+(profanity)(notranslate)Auch wenn es <$signal_count_string> auf Körper <$bodyShort> gibt, bitte versuche nicht zu landen. Bei deinen Fähigkeiten bringst du uns nur um.
+(flirt)(notranslate)<commander>, wir haben <$signal_count_string> auf Körper <$bodyShort> entdeckt. Du findest aber auch immer was!
 
 
 <!-- SYSTEMINFORMATIONEN
