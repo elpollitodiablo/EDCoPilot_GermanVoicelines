@@ -206,149 +206,110 @@ REPLACE
 (flirt)(notranslate)Vorschlag: Ich verstecke mich mit einem Notfallstart und komme zurück, wenn du mich brauchst. Okay?
 
 
-<!-- Traveling
-<!--
+<!-- ERKUNDUNG
 
-@ApproachingBody  <!-- first part of body approach message
+@FSSTerraformableDiscovered <!-- Unentdeckter terraformierbarer Körper gescannt. Variablen: <$bodyShort>, <$nth>
 REPLACE
-(notranslate)Annäherung an <bodyName> .
+(allbusiness)(notranslate)Unbekannter terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)Körper <$bodyShort> ist ein unentdeckter terraformierbarer Körper. Unsere <$nth> Entdeckung in dieser Sitzung.
+(profanity)(notranslate)Auch ein blindes Huhn findet mal ein Korn, beziehungsweise einen unbekannten terraformierbaren Körper wie <$bodyShort>.
+(flirt)(notranslate)Kolumbus wäre neidisch auf dich, mein großer Entdecker! Körper <$bodyShort> ist terraformierbar und bisher unbekannt. Unsere <$bodyShort> Entdeckung dieser Sitzung.
 
-@ApproachingBodyDetails <!-- second part of body approach message.
+@FSSTerraformableAlreadyDiscovered <!-- Bereits bekannten terraformierbaren Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(notranslate)Typ: <bodyType>. Gravitation: <gravity>.
+(allbusiness)(notranslate)Bekannter terraformierbarer Himmelskörper gescannt: <$bodyShort>.
+(notranslate)Körper <$bodyShort> ist terraformierbar, aber bereits entdeckt.
+(profanity)(notranslate)Wie immer zu langsam. Körper <$bodyShort> ist terraformierbar, aber schon entdeckt. Traust du dich nicht weiter raus?
+(flirt)(notranslate)Och nö, jemand ist uns zuvorgekommen und hat den terraformierbaren Körper <$bodyShort> vor uns entdeckt.
 
-@ExtremeHighGravityAlert <!-- spoken if approaching a body with 3g or more gravity 
+@FSSTerraformableDiscoveredMilestone <!-- Meilenstein nach jeder 50. Entdeckung eines unbekannten terraformierbaren Körpers. Variablen: <$bodyShort>, <$nth>
 REPLACE
-(notranslate)GEFAHR! Extreme Gravitation über 3G.
+(notranslate)
+(allbusiness)(notranslate)Meilenstein erreicht. <$nth> unbekannte terraformierbare Körper entdeckt.
+(notranslate)Wir haben einen neuen Meilenstein erreicht. <$bodyShort> ist der <$nth>. bisher unbekannte terraformierbare Körper, den wir entdeckt haben.
+(profanity)(notranslate)Hast du sonst keine Hobbies? Mit <$nth> entdeckten unbekannte terraformierbaren Körpern scheinst du wohl nichts anderes zu machen. Aber wenn man sonst nichts kann...
+(flirt)(notranslate)Schon <$nth> terraformierbare Körper entdeckt, die bisher unbekannt waren? Ich bin stolz auf dich. Weiter so!
 
-@HighGravityAlert  <!-- additional alert if approaching a higher g planet
-(notranslate)WARNUNG! Hohe Gravitation.
-
-@LandingPadDirection  <!-- pad directions when you request docking, at starports
+@FSSEarthlikeWorldDiscovered  <!-- Unentdeckter erähnlicher Körper gescannt. Variablen: <$bodyShort>, <$nth>
 REPLACE
-(notranslate)Zugewiesener Landeplatz: <landingPad>. Richtung: <padPos>.
+(notranslate)
+(allbusiness)(notranslate)Unbekannter erdähnlicher Körper entdeckt: <$bodyShort>.
+(notranslate)Körper <$bodyShort> ist ein unentdeckter erdähnlicher Körper. Unsere <$nth> Entdeckung in dieser Sitzung.
+(profanity)(notranslate)Mehr Flück als Verstand. Du bist zum <$nth>. Mal diese Sitzung über einen unbekannten erdählichen Körper wie <$bodyShort> gestolpert.
+(flirt)(notranslate)Du wandelst weiter auf den Spuren der großen Entdecker. Körper <$bodyShort> ist der <$nth> unbekannte erdähnliche Körper, den du diese Sitzung gefunden hast.
 
-@ExternalLandingPadAnnounce <!-- pad number announcements at other stations (not starports)
+@FSSEarthlikeAlreadyDiscovered <!-- Bereits bekannten erdähmlicher Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(notranslate)Zugewiesener Landeplatz: <landingPad>.
+(allbusiness)(notranslate)Bekannter erdähnlicher Körper gescannt: <$bodyShort>.
+(notranslate)Körper <$bodyShort> ist erdähnlich, aber bereits entdeckt.
+(profanity)(notranslate)Wieder zu spät zur Party, wie es scheint. Körper <$bodyShort> ist zwar erdähnlich, aber natürlich hat den schon jemand vor dir entdeckt.
+(flirt)(notranslate)Schade, der erdähnliche Körper <$bodyShort> wurde schon von einem anderen Kommander entdeckt.
 
-@AutomatedDocking
+@FSSLandableWithAtmo
 REPLACE
-(notranslate)Andockautomatik aktiviert.
+(notranslate)Landbarer Himmelskörper entdeckt: <$bodyShort>
+(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)
+(profanity)(notranslate)
+(flirt)(notranslate)
 
-@NthTouchDown
+@FSSLandableAtmoAlreadyDiscovered
 REPLACE
-(notranslate)Gelandet.
+(notranslate)Known landable body scanned: <$bodyShort>
+(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)
+(profanity)(notranslate)
+(flirt)(notranslate)
 
-@CustomGuidanceComputerLocked
+@FSSLandableAtmoAlreadyDiscovered_Short
 REPLACE
-(notranslate)(albusiness)Zielkoordinaten gesetzt.
+(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
+(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)
+(profanity)(notranslate)
+(flirt)(notranslate)
+
+@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem
+REPLACE
+(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
+(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)
+(profanity)(notranslate)
+(flirt)(notranslate)
+
+@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem_Short
+REPLACE
+(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
+(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)
+(profanity)(notranslate)
+(flirt)(notranslate)
+
+@FSSSignalCountAnnouncement
+REPLACE
+(notranslate)<$signal_count_string> auf <$bodyShort> gefunden.
+(allbusiness)(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)
+(profanity)(notranslate)
+(flirt)(notranslate)
+
+
+<!-- SYSTEMINFORMATIONEN
+
+@SystemDiscovery
+REPLACE
+(notranslate)Unbekanntes System entdeckt.
 
 @ReachedHomeSystem
 REPLACE
 (notranslate)Heimatsystem betreten.
 
-@ThargoidSystemWarning
+@R2RAllDoneInSystem 
 REPLACE
-(notranslate)GEFAHR! Targoidensystem betreten.
-
-@ThargoidStillSystemWarning
-REPLACE
-(notranslate)GEFAHR! Noch immer in Targoidensystem.
-
-@FriendOnline
-REPLACE
-(notranslate)<friendName> ist online.
-
-@FriendOffline
-REPLACE
-(notranslate)<friendName> ist offline.
-
-@JumpingToNewSystem
-REPLACE
-(notranslate)Sprung nach <$targetSystem> gestartet
-
-<!--
-<!-- Ship
-<!--
-
-@VeryLowFuelWarning  <!-- When fuel drops to one of your defined thresholds that is 5 percent or less
-REPLACE
-(notranslate)WARNUNG! Treibstofftank auf <fuelLevels> Prozent.
-
-@LowFuelWarning  <!-- When you hit your defined thresholds that are over 5 percent
-REPLACE
-(notranslate)Treibstofflevel auf <fuelLevels> Prozent.
-
-<!--
-<!-- Pilot
-<!--
-
-@WantedInSystem
-REPLACE
-(notranslate)GEFAHR! Pilot hat in diesem System den Status "gesucht".
-
-@HostileInSystem
-REPLACE
-(notranslate)GEFAHR! Pilot hat in diesem System den Status "feindlich".
-
-@IllegalCargoInSystem
-REPLACE
-(notranslate)WARNUNG! Fracht im System illegal.
-
-@WarrantInSystem
-REPLACE
-(notranslate)GEFAHR! In diesem System ist ein Haftbefehl für Piloten aktiv.
+(notranslate)Heimatsystem betreten.
 
 
-<!--
-<!-- Exploration
-<!--
-
-
-@FSSEarthlikeWorldDiscovered
-REPLACE
-(notranslate)Erdähnlicher Körper entdeckt: <$bodyShort>.
-
-@FSSTerraformableDiscovered
-REPLACE
-(notranslate)Terraformierbarer Körper entdeckt: <$bodyShort>.
-
-@FSSTerraformableDiscoveredMilestone <!-- every 50 terraformables discovered
-REPLACE
-(notranslate)Meilenstein erreicht. Gesamt <$nth> terraformierbare Körper entdeckt.
-
-@FSSLandableWithAtmo
-REPLACE
-(notranslate)Landbarer Himmelskörper entdeckt: <$bodyShort>
-
-@FSSEarthlikeAlreadyDiscovered
-REPLACE
-(notranslate)Bekannter erdähnlicher Körper gescannt: <$bodyShort>.
-
-@FSSTerraformableAlreadyDiscovered
-REPLACE
-(notranslate)Bekannter terraformierbarer Himmelskörper gescannt: <$bodyShort>.
-
-@FSSLandableAtmoAlreadyDiscovered
-REPLACE
-(notranslate)Known landable body scanned: <$bodyShort>
-
-@FSSLandableAtmoAlreadyDiscovered_Short
-REPLACE
-(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
-
-@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem
-REPLACE
-(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
-
-@FSSLandableAtmoAlreadyDiscovered_PopulatedSystem_Short
-REPLACE
-(notranslate)Bekannter landbarer Himmelskörper gescannt: <$bodyShort>
-
-@SystemDiscovery
-REPLACE
-(notranslate)Unbekanntes System entdeckt.
+<!-- EXOBIOLOGIE
 
 @ExoUnableToCheckBiologicals
 REPLACE
@@ -466,7 +427,97 @@ REPLACE
 REPLACE
 (notranslate)Alle Spezies auf diesem Himmelskörper analysiert.
 
-@FSSSignalCountAnnouncement
+
+
+<!-- Traveling
+<!--
+
+@ApproachingBody  <!-- first part of body approach message
 REPLACE
-(notranslate)<$signal_count_string> auf <$bodyShort> gefunden.
+(notranslate)Annäherung an <bodyName> .
+
+@ApproachingBodyDetails <!-- second part of body approach message.
+REPLACE
+(notranslate)Typ: <bodyType>. Gravitation: <gravity>.
+
+@ExtremeHighGravityAlert <!-- spoken if approaching a body with 3g or more gravity 
+REPLACE
+(notranslate)GEFAHR! Extreme Gravitation über 3G.
+
+@HighGravityAlert  <!-- additional alert if approaching a higher g planet
+(notranslate)WARNUNG! Hohe Gravitation.
+
+@LandingPadDirection  <!-- pad directions when you request docking, at starports
+REPLACE
+(notranslate)Zugewiesener Landeplatz: <landingPad>. Richtung: <padPos>.
+
+@ExternalLandingPadAnnounce <!-- pad number announcements at other stations (not starports)
+REPLACE
+(notranslate)Zugewiesener Landeplatz: <landingPad>.
+
+@AutomatedDocking
+REPLACE
+(notranslate)Andockautomatik aktiviert.
+
+@NthTouchDown
+REPLACE
+(notranslate)Gelandet.
+
+@CustomGuidanceComputerLocked
+REPLACE
+(notranslate)(albusiness)Zielkoordinaten gesetzt.
+
+
+
+@ThargoidSystemWarning
+REPLACE
+(notranslate)GEFAHR! Targoidensystem betreten.
+
+@ThargoidStillSystemWarning
+REPLACE
+(notranslate)GEFAHR! Noch immer in Targoidensystem.
+
+@FriendOnline
+REPLACE
+(notranslate)<friendName> ist online.
+
+@FriendOffline
+REPLACE
+(notranslate)<friendName> ist offline.
+
+@JumpingToNewSystem
+REPLACE
+(notranslate)Sprung nach <$targetSystem> gestartet
+
+<!--
+<!-- Ship
+<!--
+
+@VeryLowFuelWarning  <!-- When fuel drops to one of your defined thresholds that is 5 percent or less
+REPLACE
+(notranslate)WARNUNG! Treibstofftank auf <fuelLevels> Prozent.
+
+@LowFuelWarning  <!-- When you hit your defined thresholds that are over 5 percent
+REPLACE
+(notranslate)Treibstofflevel auf <fuelLevels> Prozent.
+
+<!--
+<!-- Pilot
+<!--
+
+@WantedInSystem
+REPLACE
+(notranslate)GEFAHR! Pilot hat in diesem System den Status "gesucht".
+
+@HostileInSystem
+REPLACE
+(notranslate)GEFAHR! Pilot hat in diesem System den Status "feindlich".
+
+@IllegalCargoInSystem
+REPLACE
+(notranslate)WARNUNG! Fracht im System illegal.
+
+@WarrantInSystem
+REPLACE
+(notranslate)GEFAHR! In diesem System ist ein Haftbefehl für Piloten aktiv.
 
