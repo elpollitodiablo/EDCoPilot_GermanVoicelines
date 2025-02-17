@@ -16,10 +16,8 @@
 <!-- (crime_dislike) Wenn "Attitude to committing crimes" DISLIKES ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
 <!-- (crime_like) Wenn "Attitude to committing crimes" LIKES ist, dann werden gelegentlich und ZUSÄTZLICH diese Zeilen verwendet.
 
-<!-- GENERAL AND STARTUP EVENTS
 
-@DefaultCommanderAddress <!-- wird die meiste Zeit für den Platzhalter <Commander> verwendet.
-REPLACE
+<!-- EDCOPILOT UND PROGRAMMSTART
 
 @BasicCommanderAddress <!-- Überschreibt die "sir, ma'am" Option in den Einstellungen
 REPLACE
@@ -99,7 +97,7 @@ REPLACE
 (notranslate)Fraktionen werden geprüft.
 
 
-<!-- SUPERCHARGING EVENTS
+<!-- ÜBERLADUNG
 
 @WhiteDwarfSupercharge <!-- Wird bei Ankunft im System abgespielt, wenn ein überladbarer weißer Zwerg vorhanden ist.
 REPLACE
@@ -115,7 +113,8 @@ REPLACE
 (profanity)(notranslate)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube ja nicht, dass du das tun solltest, bei deinem Können...
 (flirt)(notranslate)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll. Du schaffst das!
 
-<!-- TRADE & MARKET EVENTS
+
+<!-- HANDEL & MARKT
 
 @TradeMarketHasChanged <!-- Nach einer Marktaktualisierung sind nicht mehr alle Gegenstände verfügbar oder haben sich geändert.
 REPLACE
@@ -144,7 +143,8 @@ REPLACE
 (profanity)(notranslate)Was weißt du eigentlich? <$commodityName> gibt es nur auf Trägern und du suchst auf Stationen. Meine Güte...
 (flirt)(notranslate)Ich glaube, du sucht <$commodityName> am falschen Ort. <$commodityName> ist nur auf Trägern zu kaufen, auf Stationen gibt es das nicht.
 
-<!-- ROUTE & PLOTTING EVENTS
+
+<!-- ROUTE & PLANUNG
 
 @SystemIsOneJumpAway
 REPLACE
@@ -173,6 +173,38 @@ REPLACE
 (notranslate)Wir springen in das System <$targetSystem>. 
 (profanity)(notranslate)2, 1, Risiko. Bitte bring uns beim Sprung nach <$targetSystem> nicht um.
 (flirt)(notranslate)Hüpf, hüpf und schon sind wir im System <$targetSystem>.
+
+
+<!-- SCHADEN & HÜLLEN
+
+@BadSRVHull <!-- Wenn das SRV beschädigt wird.
+REPLACE
+(allbusiness)(notranslate)SRV beschädigt.
+(notranslate)Das SRV hat Schaden erlitten.
+(profanity)(notranslate)Pass auf, Idiot! Das ist ein SRV und kein Panzer. Du machst es noch kaputt.
+(flirt)(notranslate)Sei bitte vorsichtig. Ich würde dich ungerne im SRV sterben sehen.
+
+@BadShipHull <!-- Wenn das Schiff beschädigt wird.
+REPLACE
+(allbusiness)(notranslate)Schiffshülle beschädigt.
+(notranslate)Die Schiffshülle hat Schaden erlitten.
+(profanity)(notranslate)Klar, bin ja nur ich. Was sind schon Kratzer und Löcher in meiner Hülle? Falls es dir nicht aufgefallen ist: Meine Hülle wird beschätigt!
+(flirt)(notranslate)Aua. Sei bitte sanfter zu mir. Der Schaden an der Hülle sieht nicht so toll aus, und ich möchte ja hübsch für dich sein.
+
+@ParkedShipUnderAttack <!-- Wenn das geparkte Schiff beschädigt wird und man nicht drin ist. Variablen: <$health>
+REPLACE
+(allbusiness)(notranslate)Geparktes Schiff wird angegriffen. Integrität bei <$health>.
+(notranslate)Unser geparktes Schiff wird angegriffen. Die derzeitige Integrität beträgt <$health>.
+(profanity)(notranslate)Tu was, ich werde angegriffen? Ich bin schon auf <$health> Integrität runter. Wo hast du mich nur abgestellt?
+(flirt)(notranslate)Komm bitte zu mir und vertreib die bösen Angreifer. Meine Itegrität ist schon auf <$health> gefallen.
+
+@HelpParkedShip <!-- Aufforderung, das geparkte Schiff wegzuschicken, um es zu schützen.
+REPLACE
+(allbusiness)(notranslate)Autonomer Notfallstart empfohlen.
+(notranslate)Wir sollten das Schiff anweisen, sich in Sicherheit zu bringen.
+(profanity)(notranslate)DWir wäre es damit, dass du mich wegschickst? Oder ist dir meine Sicherheit egal?
+(flirt)(notranslate)Vorschlag: Ich verstecke mich mit einem Notfallstart und komme zurück, wenn du mich brauchst. Okay?
+
 
 <!-- Traveling
 <!--
