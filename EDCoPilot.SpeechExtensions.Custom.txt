@@ -57,7 +57,7 @@ REPLACE
 (flirt)(notranslate)Für dich immer, <Commander>.
 (flirt)(notranslate)Sehr gerne, <Commander>.
 
-@CoPilotStarting <!-- Wird abgespielt, wenn EDCoPilot gestartet wird.
+@CoPilotStarting <!-- Wird abgespielt, wenn EDCoPilot gestartet wird. Variablen: <shipAIName>, <$greeting> 
 REPLACE
 (allbusiness)(notranslate)Systeme werden hochgefahren.
 (notranslate)<shipAIName> wird hochgefahren. Bitte warten.
@@ -138,6 +138,34 @@ REPLACE
 (profanity)(notranslate)Ein Wunder, dein Plan scheint zu funktionieren. Mal schauen, ob das bis zu unserer Ankunft so bleibt.
 (flirt)(notranslate)Super, dein Plan geht auf, <commander>. Ab zum Markt und dann regnet es Credits!
 
+@CantBuyMineralFromStations <!-- Wenn ein Gegenstand nur auf Carriern und nicht auf Stationen gekauft werden kann. Variablen: <$commodityName>
+(allbusiness)(notranslate)<$commodityName> nur auf Trägern verfügbar.
+(notranslate)<$commodityName> kann nur auf Trägern und nicht auf Stationen gekauft werden.
+(profanity)(notranslate)Was weißt du eigentlich? <$commodityName> gibt es nur auf Trägern und du suchst auf Stationen. Meine Güte...
+(flirt)(notranslate)Ich glaube, du sucht <$commodityName> am falschen Ort. <$commodityName> ist nur auf Trägern zu kaufen, auf Stationen gibt es das nicht.
+
+<!-- ROUTE & PLOTTING EVENTS
+
+@SystemIsOneJumpAway
+REPLACE
+(allbusiness)(notranslate)Ein Sprung zum Ziel verbleibend.
+(notranslate)Wir erreichen unser Ziel mit dem nächsten Sprung.
+(profanity)(notranslate)Ich glaubs ja nicht, wir haben es fast geschafft. Wenn du den nächsten Sprung nicht verkackst, dann sind wir endlich am Ziel.
+(flirt)(notranslate)Du hast es geschafft! Noch ein Sprung und wir sind am Ziel. Toll gemacht.
+
+@RemainingLightYearsInRoute <!-- Verbleibende Entfernung zum Zielsystem. Variablen: <$lightyears>, <$targetSystem> 
+(allbusiness)(notranslate)Entfernung bis <$targetSystem>: <$lightyears>
+(notranslate)Unser Zielsystem <$targetSystem> ist noch $lightyears> entfernt.
+(profanity)(notranslate)Noch <$lightyears> bis <$targetSystem>. Dann bin ich dich endlich los, oder? 
+(flirt)(notranslate)Wow, noch <$lightyears> bis zum Zielsystem <$targetSystem>. Ich mag unsere gemeinsamen Reisen.
+
+@RemainingJumpsInRoute <!-- Verbleibende Sprünge zum Zielsystem. Variablen: <$jumpsremaining> 
+(allbusiness)(notranslate)Verbleibende Sprünge zum Zielsystem: <$jumpsremaining> 
+(notranslate)Wir erreiche unser Zielsystem in <$jumpsremaining> Sprüngen.
+(profanity)(notranslate)Noch <$jumpsremaining> Spünge mit dir in dieser Blechbüchse, dann sind wir endlich da.
+(flirt)(notranslate)Noch <$jumpsremaining> gemeinsame Sprünge bis zu unserem Ziel. Danach fliegen wir aber weiter, oder?
+
+@JumpingToNewSystem
 <!-- Traveling
 <!--
 
