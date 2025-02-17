@@ -153,19 +153,27 @@ REPLACE
 (profanity)(notranslate)Ich glaubs ja nicht, wir haben es fast geschafft. Wenn du den nächsten Sprung nicht verkackst, dann sind wir endlich am Ziel.
 (flirt)(notranslate)Du hast es geschafft! Noch ein Sprung und wir sind am Ziel. Toll gemacht.
 
-@RemainingLightYearsInRoute <!-- Verbleibende Entfernung zum Zielsystem. Variablen: <$lightyears>, <$targetSystem> 
+@RemainingLightYearsInRoute <!-- Verbleibende Entfernung zum Zielsystem. Variablen: <$lightyears>, <$targetSystem>
+REPLACE
 (allbusiness)(notranslate)Entfernung bis <$targetSystem>: <$lightyears>
 (notranslate)Unser Zielsystem <$targetSystem> ist noch $lightyears> entfernt.
 (profanity)(notranslate)Noch <$lightyears> bis <$targetSystem>. Dann bin ich dich endlich los, oder? 
 (flirt)(notranslate)Wow, noch <$lightyears> bis zum Zielsystem <$targetSystem>. Ich mag unsere gemeinsamen Reisen.
 
-@RemainingJumpsInRoute <!-- Verbleibende Sprünge zum Zielsystem. Variablen: <$jumpsremaining> 
+@RemainingJumpsInRoute <!-- Verbleibende Sprünge zum Zielsystem. Variablen: <$jumpsremaining>
+REPLACE
 (allbusiness)(notranslate)Verbleibende Sprünge zum Zielsystem: <$jumpsremaining> 
 (notranslate)Wir erreiche unser Zielsystem in <$jumpsremaining> Sprüngen.
 (profanity)(notranslate)Noch <$jumpsremaining> Spünge mit dir in dieser Blechbüchse, dann sind wir endlich da.
 (flirt)(notranslate)Noch <$jumpsremaining> gemeinsame Sprünge bis zu unserem Ziel. Danach fliegen wir aber weiter, oder?
 
-@JumpingToNewSystem
+@JumpingToNewSystem <!-- Beim Sprung in ein neues System. Variablen: <$targetSystem> 
+REPLACE
+(allbusiness)(notranslate)Sprung nach <$targetSystem>.
+(notranslate)Wir springen in das System <$targetSystem>. 
+(profanity)(notranslate)2, 1, Risiko. Bitte bring uns beim Sprung nach <$targetSystem> nicht um.
+(flirt)(notranslate)Hüpf, hüpf und schon sind wir im System <$targetSystem>.
+
 <!-- Traveling
 <!--
 
