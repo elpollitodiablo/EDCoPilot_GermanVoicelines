@@ -1,4 +1,5 @@
 <!-- Deutsche Voicelines für EDCoPilot
+<!-- Quelle für die Events: https://razzserver.com/dokuwiki/doku.php?id=edcopilot_phrase_lists
 <!--
 <!-- Verwende immer REPLACE vor einem Event.
 <!-- Verwende im Normalfall immer (notranslate) vor der zu sprechenden Nachricht, damit diese nicht an den
