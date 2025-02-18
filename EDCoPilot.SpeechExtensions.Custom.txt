@@ -283,7 +283,6 @@ REPLACE
 
 @FSSSignalCountAnnouncement <!-- Gefundene Signale auf einem Körper. Variablen: <$signal_count_string>, <$bodyShort>
 REPLACE
-(notranslate)
 (allbusiness)(notranslate)<$signal_count_string> auf Körper <$bodyShort>.
 (notranslate)Unsere Scans zeigen <$signal_count_string> auf Körper <$bodyShort>.
 (profanity)(notranslate)Auch wenn es <$signal_count_string> auf Körper <$bodyShort> gibt, bitte versuche nicht zu landen. Bei deinen Fähigkeiten bringst du uns nur um.
@@ -292,17 +291,53 @@ REPLACE
 
 <!-- SYSTEMINFORMATIONEN
 
-@SystemDiscovery
-REPLACE
-(notranslate)Unbekanntes System entdeckt.
+@HighGradeEmissionsCandidate <!-- Wenn es vermutlich High Grade Emissions im System gibt. Variablen: <$emissionTypes>
+(allbusiness)(notranslate)Hochgradige Emissionen möglich: <$emissionTypes>
+(notranslate)In diesem System gibt es eventuell hochgradige Emissionen des Typs <$emissionTypes>.
+(profanity)(notranslate)Im Gegensatz zu dir scheinen wenigstens die Emissionen in diesem System hochgradig zu sein. Findest du die <$emissionTypes>?
+(flirt)(notranslate)Das System hat vermutlich hochgradige Emissionen des Typs <$emissionTypes>. Wollen wir sie gemeinsam suchen?
 
-@ReachedHomeSystem
+@SystemDiscovery <!-- Der erste Spieler, der ein System betritt gilt als dessen Entdecker.
 REPLACE
-(notranslate)Heimatsystem betreten.
+(allbusiness)(notranslate)Unbekanntes System entdeckt.
+(notranslate)Dieses System ist in keinen Datenbanken verzeichnet.
+(profanity)(notranslate)Das System ist so einfam und unbekannt wie du.
+(flirt)(notranslate)Wir sind die ersten hier. So schön einsam hier, nur wir beide...
 
-@R2RAllDoneInSystem 
+@ReachedHomeSystem <!-- Wenn man in sein eingestelltes Heimatsystem springt.
 REPLACE
-(notranslate)Heimatsystem betreten.
+(allbusiness)(notranslate)Heimatsystem betreten.
+(notranslate)Wir sind in unser Heimatsystem gesprungen.
+(profanity)(notranslate)Das hier nennst du unser zu Hause? Bin ich dich wenigstens für ein paar Stunden los?
+(flirt)(notranslate)Wir sind zu Hause. Zu Hause ist es immer noch am schönsten.
+
+@R2RAllDoneInSystem <!-- Wenn man alle relevanten Ziele in einer geplanten Road-to-Riches gescannt hat.
+REPLACE
+(allbusiness)(notranslate)Alle relevanten Signale gescannt.
+(notranslate)Wir haben alle relevanten und wertvollen Signal erfasst.
+(profanity)(notranslate)Reicht jetzt, der Rest hier ist nur Schrott. Ab zum nächsten System
+(flirt)(notranslate)Lass uns weiterziehen, hier gibt es keinen spannenden Signale mehr.
+
+<!-- HIMMELSKÖRPER
+
+@ApproachingBody  <!-- first part of body approach message
+REPLACE
+(notranslate)Annäherung an <bodyName> .
+
+@ApproachingBodyDetails <!-- second part of body approach message.
+REPLACE
+(notranslate)Typ: <bodyType>. Gravitation: <gravity>.
+
+@ExtremeHighGravityAlert <!-- spoken if approaching a body with 3g or more gravity 
+REPLACE
+(notranslate)GEFAHR! Extreme Gravitation über 3G.
+
+@HighGravityAlert  <!-- additional alert if approaching a higher g planet
+(notranslate)WARNUNG! Hohe Gravitation.
+
+@NthTouchDown
+REPLACE
+(notranslate)Gelandet.
 
 
 <!-- EXOBIOLOGIE
@@ -428,21 +463,6 @@ REPLACE
 <!-- Traveling
 <!--
 
-@ApproachingBody  <!-- first part of body approach message
-REPLACE
-(notranslate)Annäherung an <bodyName> .
-
-@ApproachingBodyDetails <!-- second part of body approach message.
-REPLACE
-(notranslate)Typ: <bodyType>. Gravitation: <gravity>.
-
-@ExtremeHighGravityAlert <!-- spoken if approaching a body with 3g or more gravity 
-REPLACE
-(notranslate)GEFAHR! Extreme Gravitation über 3G.
-
-@HighGravityAlert  <!-- additional alert if approaching a higher g planet
-(notranslate)WARNUNG! Hohe Gravitation.
-
 @LandingPadDirection  <!-- pad directions when you request docking, at starports
 REPLACE
 (notranslate)Zugewiesener Landeplatz: <landingPad>. Richtung: <padPos>.
@@ -455,15 +475,9 @@ REPLACE
 REPLACE
 (notranslate)Andockautomatik aktiviert.
 
-@NthTouchDown
-REPLACE
-(notranslate)Gelandet.
-
 @CustomGuidanceComputerLocked
 REPLACE
 (notranslate)(albusiness)Zielkoordinaten gesetzt.
-
-
 
 @ThargoidSystemWarning
 REPLACE
