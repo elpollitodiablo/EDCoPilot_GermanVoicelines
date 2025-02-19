@@ -36,6 +36,7 @@ eins weitere=eine weitere
 1 weitere=eine weitere
 1 biologisches=ein biologisches
 -=(space)
+strich=(space)
 Bindestrich=(space)
 Dash=(space)
 dash=(space)
