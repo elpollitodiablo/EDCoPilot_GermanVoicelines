@@ -20,6 +20,7 @@ Commander RAZZAFRAG=Commander Razzafrag|my creator|Commander Razzafrag, my creat
 <!--Add your own entries below, and have fun with it!
 <!--
 Kernic=Kernik
+Commander=Kommander
 (space)1(space)=(space)ein(space)
 bodies=planets
 Bodies=planets
@@ -39,3 +40,8 @@ Dash=(space)
 dash=(space)
 zero=0
 Zero=0
+KM-=K(space)M-
+auftankbar=zum Auftanken geeignet
+schöpfen=tanken
+betankbar=zum Auftanken geeignet
+Meilen=Kilometer
