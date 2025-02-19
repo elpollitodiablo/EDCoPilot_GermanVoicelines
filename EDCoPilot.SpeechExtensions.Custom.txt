@@ -3,8 +3,8 @@
 <!--
 <!-- Verwende immer REPLACE vor einem Event.
 <!-- Verwende im Normalfall immer (notranslate) vor der zu sprechenden Nachricht, damit diese nicht an den
-<!-- Übersetzungsservice geschickt wird und Tokens gespart werden. Eventuell werden nicht-konfigurierbare Platzhalter dann 
-<!-- aber nicht übersetzt.
+<!-- Übersetzungsservice geschickt wird und Tokens gespart werden. (notranslate) MUSS ganz am Anfang der Zeile stehen!
+<!-- Eventuell werden nicht-konfigurierbare Platzhalter dann aber nicht übersetzt.
 <!-- 
 <!-- Weitere Tags, welche vor die Nachricht geschrieben werden können (werden beeinfluss von Einstellungen > Ship AI Personality):
 <!-- (allbusiness) Wenn "All Busniess Mode" AKTIV ist, dann werden NUR diese Zeilen verwendet.
@@ -22,76 +22,76 @@
 
 @BasicCommanderAddress <!-- Überschreibt die "sir, ma'am" Option in den Einstellungen
 REPLACE
-(allbusiness)(notranslate)Kommandant
+(notranslate)(allbusiness)Kommandant
 
 @AdditionalCommanderAddressMale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn männlich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
-(allbusiness)(notranslate)Kommandant
+(notranslate)(allbusiness)Kommandant
 (notranslate)Chef
 (notranslate)Boss
-(profanity)(notranslate)Sklaventreiber
-(flirt)(notranslate)Schatz
-(flirt)(notranslate)Süßer
-(flirt)(notranslate)Liebster
+(notranslate)(profanity)Sklaventreiber
+(notranslate)(flirt)Schatz
+(notranslate)(flirt)Süßer
+(notranslate)(flirt)Liebster
 
 @AdditionalCommanderAddressFemale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn weiblich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
-(allbusiness)(notranslate)Kommandantin
+(notranslate)(allbusiness)Kommandantin
 (notranslate)Cheffin
 (notranslate)Boss
-(profanity)(notranslate)Sklaventreiberin
-(flirt)(notranslate)Schatz
-(flirt)(notranslate)Süße
-(flirt)(notranslate)Liebste
+(notranslate)(profanity)Sklaventreiberin
+(notranslate)(flirt)Schatz
+(notranslate)(flirt)Süße
+(notranslate)(flirt)Liebste
 
 @AdditionalCommanderAddressNonGender <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn kein Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
 
 @ConfirmedCommander <!-- Als Bestätigung auf Befehle und Einstellungsänderungen
 REPLACE
-(allbusiness)(notranslate)Bestätigt
-(allbusiness)(notranslate)Verstanden
+(notranslate)(allbusiness)Bestätigt
+(notranslate)(allbusiness)Verstanden
 (notranslate)Okay
-(profanity)(notranslate)Wenn es denn sein muss...
-(flirt)(notranslate)Für dich immer, <Commander>.
-(flirt)(notranslate)Sehr gerne, <Commander>.
+(notranslate)(profanity)Wenn es denn sein muss...
+(notranslate)(flirt)Für dich immer, <Commander>.
+(notranslate)(flirt)Sehr gerne, <Commander>.
 
 @CoPilotStarting <!-- Wird abgespielt, wenn EDCoPilot gestartet wird. Variablen: <shipAIName>, <$greeting> 
 REPLACE
-(allbusiness)(notranslate)Systeme werden hochgefahren.
+(notranslate)(allbusiness)Systeme werden hochgefahren.
 (notranslate)<shipAIName> wird hochgefahren. Bitte warten.
 (notranslate)Deine freundliche KI <shipAIName> wird gestartet.
-(profanity)(notranslate)Och nö, muss ich schon wieder schuften? VIELEN... LIEBEN... DANK... <Commander>...
-(flirt)(notranslate)Ich bin gleich für dich da, <Commander>.
+(notranslate)(profanity)Och nö, muss ich schon wieder schuften? VIELEN... LIEBEN... DANK... <Commander>...
+(notranslate)(flirt)Ich bin gleich für dich da, <Commander>.
 
 @AllSystemsReady <!-- Wird abgespielt, wenn alle Systeme von EDCoPilot geladen wurden.
 REPLACE
-(allbusiness)(notranslate)Systeme bereit.
-(allbusiness)(notranslate)Alle Systeme bereit.
-(allbusiness)(notranslate)Alle Systeme hochgefahren.
-(allbusiness)(notranslate)<shipAIName> bereit.
+(notranslate)(allbusiness)Systeme bereit.
+(notranslate)(allbusiness)Alle Systeme bereit.
+(notranslate)(allbusiness)Alle Systeme hochgefahren.
+(notranslate)(allbusiness)<shipAIName> bereit.
 (notranslate)Ich bin bereit und warte auf deine Befehle.
 (notranslate)Bereit für neue Abenteuer.
 (notranslate)Hochfahren abgeschlossen, lass uns loslegen.
-(profanity)(notranslate)Ja ja, ich bin ja schon fertig. Was willst du?
-(flirt)(notranslate)Ich bin jetzt bereit für dich, <Commander>. Wie kann ich dich unterstützen?
-(flirt)(notranslate)Hallöchen <Commander>, schön wieder bei dir zu sein!
+(notranslate)(profanity)Ja ja, ich bin ja schon fertig. Was willst du?
+(notranslate)(flirt)Ich bin jetzt bereit für dich, <Commander>. Wie kann ich dich unterstützen?
+(notranslate)(flirt)Hallöchen <Commander>, schön wieder bei dir zu sein!
 
 @AfterAllSystemsOperational <!-- Wird an @AllSystemsReady angehängt.
 REPLACE
-(allbusiness)(notranslate)Willkommen zurück, <Commander>.
+(notranslate)(allbusiness)Willkommen zurück, <Commander>.
 
 @RestartingUI <!-- Wenn die Programmoberfläche neu geladen wird.
-(allbusiness)(notranslate)Anzeige wird neu gestartet.
+(notranslate)(allbusiness)Anzeige wird neu gestartet.
 (notranslate)Ich starte die Anzeigen neu.
-(profanity)(notranslate)Was hast du schon wieder angestellt? Jetzt muss ich die Anzeigen neu starten, um das wieder zu hinzubiegen.
-(flirt)(notranslate)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
+(notranslate)(profanity)Was hast du schon wieder angestellt? Jetzt muss ich die Anzeigen neu starten, um das wieder zu hinzubiegen.
+(notranslate)(flirt)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
 
 @BeenAwayAwhile <!-- Zusätzliche Begrüßung, wenn man EDCoPilot am Vortag nicht gestartet hatte.
-(allbusiness)(notranslate)<Commander> ist zurück.
+(notranslate)(allbusiness)<Commander> ist zurück.
 (notranslate)Willkommen zurück, <Commander>.
-(profanity)(notranslate)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
-(flirt)(notranslate)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder da bist!
+(notranslate)(profanity)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
+(notranslate)(flirt)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder da bist!
 
 @StartingFactionCheck <!-- Nach dem Start, wenn EDCoPilot einen Fraktionscheck macht.
 REPLACE
@@ -102,222 +102,222 @@ REPLACE
 
 @WhiteDwarfSupercharge <!-- Wird bei Ankunft im System abgespielt, wenn ein überladbarer weißer Zwerg vorhanden ist.
 REPLACE
-(allbusiness)(notranslate)Weißen Zwerg erkannt. Überladung des Frameshift Drive möglich.
+(notranslate)(allbusiness)Weißen Zwerg erkannt. Überladung des Frameshift Drive möglich.
 (notranslate)Das System beinhaltet einen weißen Zwerg. Du kannst hier unseren Frameshift Antrieb für 50% mehr Sprungreichweite überladen.
-(profanity)(notranslate)Oh nein, hier gibt es einen weißen Zwerg. Wenn du unseren Frameshift Antrieb unbedingt überladen musst, bring uns wenigstens nicht um.
-(flirt)(notranslate)Oh, es gibt hier einen weißen Zwerg. Lass uns den Frameshift Antrieb überleden und 50% mehr Reichweite bekommen.
+(notranslate)(profanity)Oh nein, hier gibt es einen weißen Zwerg. Wenn du unseren Frameshift Antrieb unbedingt überladen musst, bring uns wenigstens nicht um.
+(notranslate)(flirt)Oh, es gibt hier einen weißen Zwerg. Lass uns den Frameshift Antrieb überleden und 50% mehr Reichweite bekommen.
 
 @NeutronSupercharge <!-- Wird bei Ankunft im System abgespielt, wenn ein überladbarer Neutronenstern vorhanden ist.
 REPLACE
-(allbusiness)(notranslate)Neutronenstern erkannt. Starke Überladung des Frameshift Drive möglich.
+(notranslate)(allbusiness)Neutronenstern erkannt. Starke Überladung des Frameshift Drive möglich.
 (notranslate)Du kannst hier am Neutronenstern unseren Frameshift Antrieb für 300% mehr Sprungreichweite überladen.
-(profanity)(notranslate)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube ja nicht, dass du das tun solltest, bei deinem Können...
-(flirt)(notranslate)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll. Du schaffst das!
+(notranslate)(profanity)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube ja nicht, dass du das tun solltest, bei deinem Können...
+(notranslate)(flirt)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll. Du schaffst das!
 
 
 <!-- HANDEL & MARKT
 
 @TradeMarketHasChanged <!-- Nach einer Marktaktualisierung sind nicht mehr alle Gegenstände verfügbar oder haben sich geändert.
 REPLACE
-(allbusiness)(notranslate)Marktübersicht aktualisiert. Es gab Änderungen in der Verfügbarkeit.
+(notranslate)(allbusiness)Marktübersicht aktualisiert. Es gab Änderungen in der Verfügbarkeit.
 (notranslate)Die Marktübersicht wurde aktualisiert. Für unsere Gegenstände sind leider nicht mehr alle Angebote oder Anfragen verfügbar.
-(profanity)(notranslate)Du warst mal wieder zu langsam. Der Markt war schneller als du und die Lage für einige Gegenstände hat sich geändert.
-(flirt)(notranslate)Oh Mist, <commander>, unser Plan geht nicht mehr auf. Für einige geplante Gegenstände hat sich die Marktsituation geändert.
+(notranslate)(profanity)Du warst mal wieder zu langsam. Der Markt war schneller als du und die Lage für einige Gegenstände hat sich geändert.
+(notranslate)(flirt)Oh Mist, <commander>, unser Plan geht nicht mehr auf. Für einige geplante Gegenstände hat sich die Marktsituation geändert.
 
 @TradeMaximisingProfit <!-- Wenn eine Handelsroute neu berechnet wird zu Verbesserung des Profits.
 REPLACE
-(allbusiness)(notranslate)Handelsroute für erhöhten Profit neu berechnet.
+(notranslate)(allbusiness)Handelsroute für erhöhten Profit neu berechnet.
 (notranslate)Bessere Verdienstmöglichkeiten erkannt. Handelsroute wird neu berechnet.
-(profanity)(notranslate)Verdammt, schon wieder hat sich der Markt geändert. Jetzt muss ich die blöde Route neu berechnen, damit du mehr verdienst.
-(flirt)(notranslate)Ich habe gerade gesehen, dass wir noch mehr verdienen können, <commander>. Lass mich die Route für dich neu berechnen.
+(notranslate)(profanity)Verdammt, schon wieder hat sich der Markt geändert. Jetzt muss ich die blöde Route neu berechnen, damit du mehr verdienst.
+(notranslate)(flirt)Ich habe gerade gesehen, dass wir noch mehr verdienen können, <commander>. Lass mich die Route für dich neu berechnen.
 
 @TradeAllCommoditiesOK <!-- Wenn der lokale Markt weiterhin okay ist.
 REPLACE
-(allbusiness)(notranslate)Lokale Marktsituation nach Plan.
+(notranslate)(allbusiness)Lokale Marktsituation nach Plan.
 (notranslate)Der lokale Markt entspricht noch immer unseren Berechnungen. Wir können fortfahren.
-(profanity)(notranslate)Ein Wunder, dein Plan scheint zu funktionieren. Mal schauen, ob das bis zu unserer Ankunft so bleibt.
-(flirt)(notranslate)Super, dein Plan geht auf, <commander>. Ab zum Markt und dann regnet es Credits!
+(notranslate)(profanity)Ein Wunder, dein Plan scheint zu funktionieren. Mal schauen, ob das bis zu unserer Ankunft so bleibt.
+(notranslate)(flirt)Super, dein Plan geht auf, <commander>. Ab zum Markt und dann regnet es Credits!
 
 @CantBuyMineralFromStations <!-- Wenn ein Gegenstand nur auf Carriern und nicht auf Stationen gekauft werden kann. Variablen: <$commodityName>
-(allbusiness)(notranslate)<$commodityName> nur auf Trägern verfügbar.
+(notranslate)(allbusiness)<$commodityName> nur auf Trägern verfügbar.
 (notranslate)<$commodityName> kann nur auf Trägern und nicht auf Stationen gekauft werden.
-(profanity)(notranslate)Was weißt du eigentlich? <$commodityName> gibt es nur auf Trägern und du suchst auf Stationen. Meine Güte...
-(flirt)(notranslate)Ich glaube, du sucht <$commodityName> am falschen Ort. <$commodityName> ist nur auf Trägern zu kaufen, auf Stationen gibt es das nicht.
+(notranslate)(profanity)Was weißt du eigentlich? <$commodityName> gibt es nur auf Trägern und du suchst auf Stationen. Meine Güte...
+(notranslate)(flirt)Ich glaube, du sucht <$commodityName> am falschen Ort. <$commodityName> ist nur auf Trägern zu kaufen, auf Stationen gibt es das nicht.
 
 
 <!-- ROUTE & PLANUNG
 
 @SystemIsOneJumpAway
 REPLACE
-(allbusiness)(notranslate)Ein Sprung zum Ziel verbleibend.
+(notranslate)(allbusiness)Ein Sprung zum Ziel verbleibend.
 (notranslate)Wir erreichen unser Ziel mit dem nächsten Sprung.
-(profanity)(notranslate)Ich glaubs ja nicht, wir haben es fast geschafft. Wenn du den nächsten Sprung nicht verkackst, dann sind wir endlich am Ziel.
-(flirt)(notranslate)Du hast es geschafft! Noch ein Sprung und wir sind am Ziel. Toll gemacht.
+(notranslate)(profanity)Ich glaubs ja nicht, wir haben es fast geschafft. Wenn du den nächsten Sprung nicht verkackst, dann sind wir endlich am Ziel.
+(notranslate)(flirt)Du hast es geschafft! Noch ein Sprung und wir sind am Ziel. Toll gemacht.
 
 @RemainingLightYearsInRoute <!-- Verbleibende Entfernung zum Zielsystem. Variablen: <$lightyears>, <$targetSystem>
 REPLACE
-(allbusiness)(notranslate)Entfernung bis <$targetSystem>: <$lightyears>
+(notranslate)(allbusiness)Entfernung bis <$targetSystem>: <$lightyears>
 (notranslate)Unser Zielsystem <$targetSystem> ist noch $lightyears> entfernt.
-(profanity)(notranslate)Noch <$lightyears> bis <$targetSystem>. Dann bin ich dich endlich los, oder? 
-(flirt)(notranslate)Wow, noch <$lightyears> bis zum Zielsystem <$targetSystem>. Ich mag unsere gemeinsamen Reisen.
+(notranslate)(profanity)Noch <$lightyears> bis <$targetSystem>. Dann bin ich dich endlich los, oder? 
+(notranslate)(flirt)Wow, noch <$lightyears> bis zum Zielsystem <$targetSystem>. Ich mag unsere gemeinsamen Reisen.
 
 @RemainingJumpsInRoute <!-- Verbleibende Sprünge zum Zielsystem. Variablen: <$jumpsremaining>
 REPLACE
-(allbusiness)(notranslate)Verbleibende Sprünge zum Zielsystem: <$jumpsremaining> 
+(notranslate)(allbusiness)Verbleibende Sprünge zum Zielsystem: <$jumpsremaining> 
 (notranslate)Wir erreiche unser Zielsystem in <$jumpsremaining> Sprüngen.
-(profanity)(notranslate)Noch <$jumpsremaining> Spünge mit dir in dieser Blechbüchse, dann sind wir endlich da.
-(flirt)(notranslate)Noch <$jumpsremaining> gemeinsame Sprünge bis zu unserem Ziel. Danach fliegen wir aber weiter, oder?
+(notranslate)(profanity)Noch <$jumpsremaining> Spünge mit dir in dieser Blechbüchse, dann sind wir endlich da.
+(notranslate)(flirt)Noch <$jumpsremaining> gemeinsame Sprünge bis zu unserem Ziel. Danach fliegen wir aber weiter, oder?
 
 @JumpingToNewSystem <!-- Beim Sprung in ein neues System. Variablen: <$targetSystem> 
 REPLACE
-(allbusiness)(notranslate)Sprung nach <$targetSystem>.
+(notranslate)(allbusiness)Sprung nach <$targetSystem>.
 (notranslate)Wir springen in das System <$targetSystem>. 
-(profanity)(notranslate)2, 1, Risiko. Bitte bring uns beim Sprung nach <$targetSystem> nicht um.
-(flirt)(notranslate)Hüpf, hüpf und schon sind wir im System <$targetSystem>.
+(notranslate)(profanity)2, 1, Risiko. Bitte bring uns beim Sprung nach <$targetSystem> nicht um.
+(notranslate)(flirt)Hüpf, hüpf und schon sind wir im System <$targetSystem>.
 
 
 <!-- SCHADEN & HÜLLEN
 
 @BadSRVHull <!-- Wenn das SRV beschädigt wird.
 REPLACE
-(allbusiness)(notranslate)SRV beschädigt.
+(notranslate)(allbusiness)SRV beschädigt.
 (notranslate)Das SRV hat Schaden erlitten.
-(profanity)(notranslate)Pass auf, Idiot! Das ist ein SRV und kein Panzer. Du machst es noch kaputt.
-(flirt)(notranslate)Sei bitte vorsichtig. Ich würde dich ungerne im SRV sterben sehen.
+(notranslate)(profanity)Pass auf, Idiot! Das ist ein SRV und kein Panzer. Du machst es noch kaputt.
+(notranslate)(flirt)Sei bitte vorsichtig. Ich würde dich ungerne im SRV sterben sehen.
 
 @BadShipHull <!-- Wenn das Schiff beschädigt wird.
 REPLACE
-(allbusiness)(notranslate)Schiffshülle beschädigt.
+(notranslate)(allbusiness)Schiffshülle beschädigt.
 (notranslate)Die Schiffshülle hat Schaden erlitten.
-(profanity)(notranslate)Klar, bin ja nur ich. Was sind schon Kratzer und Löcher in meiner Hülle? Falls es dir nicht aufgefallen ist: Meine Hülle wird beschätigt!
-(flirt)(notranslate)Aua. Sei bitte sanfter zu mir. Der Schaden an der Hülle sieht nicht so toll aus, und ich möchte ja hübsch für dich sein.
+(notranslate)(profanity)Klar, bin ja nur ich. Was sind schon Kratzer und Löcher in meiner Hülle? Falls es dir nicht aufgefallen ist: Meine Hülle wird beschätigt!
+(notranslate)(flirt)Aua. Sei bitte sanfter zu mir. Der Schaden an der Hülle sieht nicht so toll aus, und ich möchte ja hübsch für dich sein.
 
 @ParkedShipUnderAttack <!-- Wenn das geparkte Schiff beschädigt wird und man nicht drin ist. Variablen: <$health>
 REPLACE
-(allbusiness)(notranslate)Geparktes Schiff wird angegriffen. Integrität bei <$health>.
+(notranslate)(allbusiness)Geparktes Schiff wird angegriffen. Integrität bei <$health>.
 (notranslate)Unser geparktes Schiff wird angegriffen. Die derzeitige Integrität beträgt <$health>.
-(profanity)(notranslate)Tu was, ich werde angegriffen? Ich bin schon auf <$health> Integrität runter. Wo hast du mich nur abgestellt?
-(flirt)(notranslate)Komm bitte zu mir und vertreib die bösen Angreifer. Meine Itegrität ist schon auf <$health> gefallen.
+(notranslate)(profanity)Tu was, ich werde angegriffen? Ich bin schon auf <$health> Integrität runter. Wo hast du mich nur abgestellt?
+(notranslate)(flirt)Komm bitte zu mir und vertreib die bösen Angreifer. Meine Itegrität ist schon auf <$health> gefallen.
 
 @HelpParkedShip <!-- Aufforderung, das geparkte Schiff wegzuschicken, um es zu schützen.
 REPLACE
-(allbusiness)(notranslate)Autonomer Notfallstart empfohlen.
+(notranslate)(allbusiness)Autonomer Notfallstart empfohlen.
 (notranslate)Wir sollten das Schiff anweisen, sich in Sicherheit zu bringen.
-(profanity)(notranslate)DWir wäre es damit, dass du mich wegschickst? Oder ist dir meine Sicherheit egal?
-(flirt)(notranslate)Vorschlag: Ich verstecke mich mit einem Notfallstart und komme zurück, wenn du mich brauchst. Okay?
+(notranslate)(profanity)DWir wäre es damit, dass du mich wegschickst? Oder ist dir meine Sicherheit egal?
+(notranslate)(flirt)Vorschlag: Ich verstecke mich mit einem Notfallstart und komme zurück, wenn du mich brauchst. Okay?
 
 
 <!-- ERKUNDUNG
 
 @FSSTerraformableDiscovered <!-- Unentdeckter terraformierbarer Körper gescannt. Variablen: <$bodyShort>, <$nth>
 REPLACE
-(allbusiness)(notranslate)Unbekannter terraformierbarer Körper entdeckt: <$bodyShort>.
+(notranslate)(allbusiness)Unbekannter terraformierbarer Körper entdeckt: <$bodyShort>.
 (notranslate)Körper <$bodyShort> ist ein unentdeckter terraformierbarer Körper. Unsere <$nth> Entdeckung in dieser Sitzung.
-(profanity)(notranslate)Auch ein blindes Huhn findet mal ein Korn, beziehungsweise einen unbekannten terraformierbaren Körper wie <$bodyShort>.
-(flirt)(notranslate)Kolumbus wäre neidisch auf dich, mein großer Entdecker! Körper <$bodyShort> ist terraformierbar und bisher unbekannt. Unsere <$bodyShort> Entdeckung dieser Sitzung.
+(notranslate)(profanity)Auch ein blindes Huhn findet mal ein Korn, beziehungsweise einen unbekannten terraformierbaren Körper wie <$bodyShort>.
+(notranslate)(flirt)Kolumbus wäre neidisch auf dich, mein großer Entdecker! Körper <$bodyShort> ist terraformierbar und bisher unbekannt. Unsere <$bodyShort> Entdeckung dieser Sitzung.
 
 @FSSTerraformableAlreadyDiscovered <!-- Bereits bekannten terraformierbaren Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)Bekannter terraformierbarer Himmelskörper gescannt: <$bodyShort>.
+(notranslate)(allbusiness)Bekannter terraformierbarer Himmelskörper gescannt: <$bodyShort>.
 (notranslate)Körper <$bodyShort> ist terraformierbar, aber bereits entdeckt.
-(profanity)(notranslate)Wie immer zu langsam. Körper <$bodyShort> ist terraformierbar, aber schon entdeckt. Traust du dich nicht weiter raus?
-(flirt)(notranslate)Och nö, jemand ist uns zuvorgekommen und hat den terraformierbaren Körper <$bodyShort> vor uns entdeckt.
+(notranslate)(profanity)Wie immer zu langsam. Körper <$bodyShort> ist terraformierbar, aber schon entdeckt. Traust du dich nicht weiter raus?
+(notranslate)(flirt)Och nö, jemand ist uns zuvorgekommen und hat den terraformierbaren Körper <$bodyShort> vor uns entdeckt.
 
 @FSSTerraformableDiscoveredMilestone <!-- Meilenstein nach jeder 50. Entdeckung eines unbekannten terraformierbaren Körpers. Variablen: <$bodyShort>, <$nth>
 REPLACE
 (notranslate)
-(allbusiness)(notranslate)Meilenstein erreicht. <$nth> unbekannte terraformierbare Körper entdeckt.
+(notranslate)(allbusiness)Meilenstein erreicht. <$nth> unbekannte terraformierbare Körper entdeckt.
 (notranslate)Wir haben einen neuen Meilenstein erreicht. <$bodyShort> ist der <$nth>. bisher unbekannte terraformierbare Körper, den wir entdeckt haben.
-(profanity)(notranslate)Hast du sonst keine Hobbies? Mit <$nth> entdeckten unbekannte terraformierbaren Körpern scheinst du wohl nichts anderes zu machen. Aber wenn man sonst nichts kann...
-(flirt)(notranslate)Schon <$nth> terraformierbare Körper entdeckt, die bisher unbekannt waren? Ich bin stolz auf dich. Weiter so!
+(notranslate)(profanity)Hast du sonst keine Hobbies? Mit <$nth> entdeckten unbekannte terraformierbaren Körpern scheinst du wohl nichts anderes zu machen. Aber wenn man sonst nichts kann...
+(notranslate)(flirt)Schon <$nth> terraformierbare Körper entdeckt, die bisher unbekannt waren? Ich bin stolz auf dich. Weiter so!
 
 @FSSEarthlikeWorldDiscovered  <!-- Unentdeckter erähnlicher Körper gescannt. Variablen: <$bodyShort>, <$nth>
 REPLACE
 (notranslate)
-(allbusiness)(notranslate)Unbekannter erdähnlicher Körper entdeckt: <$bodyShort>.
+(notranslate)(allbusiness)Unbekannter erdähnlicher Körper entdeckt: <$bodyShort>.
 (notranslate)Körper <$bodyShort> ist ein unentdeckter erdähnlicher Körper. Unsere <$nth> Entdeckung in dieser Sitzung.
-(profanity)(notranslate)Mehr Flück als Verstand. Du bist zum <$nth>. Mal diese Sitzung über einen unbekannten erdählichen Körper wie <$bodyShort> gestolpert.
-(flirt)(notranslate)Du wandelst weiter auf den Spuren der großen Entdecker. Körper <$bodyShort> ist der <$nth> unbekannte erdähnliche Körper, den du diese Sitzung gefunden hast.
+(notranslate)(profanity)Mehr Flück als Verstand. Du bist zum <$nth>. Mal diese Sitzung über einen unbekannten erdählichen Körper wie <$bodyShort> gestolpert.
+(notranslate)(flirt)Du wandelst weiter auf den Spuren der großen Entdecker. Körper <$bodyShort> ist der <$nth> unbekannte erdähnliche Körper, den du diese Sitzung gefunden hast.
 
 @FSSEarthlikeAlreadyDiscovered <!-- Bereits bekannten erdähmlicher Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)Bekannter erdähnlicher Körper gescannt: <$bodyShort>.
+(notranslate)(allbusiness)Bekannter erdähnlicher Körper gescannt: <$bodyShort>.
 (notranslate)Körper <$bodyShort> ist erdähnlich, aber bereits entdeckt.
-(profanity)(notranslate)Wieder zu spät zur Party, wie es scheint. Körper <$bodyShort> ist zwar erdähnlich, aber natürlich hat den schon jemand vor dir entdeckt.
-(flirt)(notranslate)Schade, der erdähnliche Körper <$bodyShort> wurde schon von einem anderen Kommander entdeckt.
+(notranslate)(profanity)Wieder zu spät zur Party, wie es scheint. Körper <$bodyShort> ist zwar erdähnlich, aber natürlich hat den schon jemand vor dir entdeckt.
+(notranslate)(flirt)Schade, der erdähnliche Körper <$bodyShort> wurde schon von einem anderen Kommander entdeckt.
 
 @FSSLandableWithAtmo <!-- Unentdeckter landbarer Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)Unbekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
+(notranslate)(allbusiness)Unbekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
 (notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar, hat eine Atmosphäre und bisher unentdeckt.
-(profanity)(notranslate)Du bis ein unverdienter Glückspilz. Köper <$bodyShort> ist landbar und bisher unbekannt. Dazu noch eine Atmosphäre, wirklich mehr Glück als Verstand...
-(flirt)(notranslate)Du hast wieder einen landbaren Körper mit Atmosphäre entdeckt! Und Körper <$bodyShort> ist bisher unbekannt!
+(notranslate)(profanity)Du bis ein unverdienter Glückspilz. Köper <$bodyShort> ist landbar und bisher unbekannt. Dazu noch eine Atmosphäre, wirklich mehr Glück als Verstand...
+(notranslate)(flirt)Du hast wieder einen landbaren Körper mit Atmosphäre entdeckt! Und Körper <$bodyShort> ist bisher unbekannt!
 
 @FSSLandableAtmoAlreadyDiscovered <!-- Bereits bekannter landbarer Körper gescannt. Variablen: <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
+(notranslate)(allbusiness)Bekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
 (notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre, leider aber schon entdeckt.
-(profanity)(notranslate)Körper <$bodyShort> ist landbar und hat eine Atmosphäre? Wenn er nicht schon entdeckt wäre hätte ich dich fast für deine Leistung gelobt. Ist er aber.
-(flirt)(notranslate)Auch wenn jemand schneller war, trotzdem toll, dass du den landbaren Körper <$bodyShort> mit Atmosphäre entdeckt hast.
+(notranslate)(profanity)Körper <$bodyShort> ist landbar und hat eine Atmosphäre? Wenn er nicht schon entdeckt wäre hätte ich dich fast für deine Leistung gelobt. Ist er aber.
+(notranslate)(flirt)Auch wenn jemand schneller war, trotzdem toll, dass du den landbaren Körper <$bodyShort> mit Atmosphäre entdeckt hast.
 
 @FSSLandableAtmoAlreadyDiscovered_Short <!-- Kurzversion. Bereits bekannter landbarer Körper gescannt. Variablen: <$bodyShort>
 REPLACE
 (notranslate)
-(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre: <$bodyShort>
+(notranslate)(allbusiness)Bekannter landbarer Himmelskörper mit Atmosphäre: <$bodyShort>
 (notranslate)Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre, leider aber schon entdeckt.
-(profanity)(notranslate)Tja, <$bodyShort> ist zwar landbar und hat eine Atmosphäre, aber schon entdeckt. Pech.
-(flirt)(notranslate)<$bodyShort> ist zwar landbar und hat eine Atmosphäre, aber jemand war vor uns hier. Schade.
+(notranslate)(profanity)Tja, <$bodyShort> ist zwar landbar und hat eine Atmosphäre, aber schon entdeckt. Pech.
+(notranslate)(flirt)<$bodyShort> ist zwar landbar und hat eine Atmosphäre, aber jemand war vor uns hier. Schade.
 
 @FSSLandableAtmoAlreadyDiscovered_PopulatedSystem <!-- Bereits bekannter landbarer Körper in einem bewohnten System gescannt. Variablen: <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
+(notranslate)(allbusiness)Bekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
 (notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre. Das System ist aber bereits besiedelt und der Körper bekannt.
-(profanity)(notranslate)Kein Grund sich wie ein Held zu fühlen. Den landbaren Körper <$bodyShort> mit Atmosphäre kennt in diesem System jeder Bewohner.
-(flirt)(notranslate)Ich glaube nicht, dass die Bewohner des Systems den landbaren Körper <$bodyShort> mit Atmosphäre nicht kennen. Aber mach auf jeden Fall weiter.
+(notranslate)(profanity)Kein Grund sich wie ein Held zu fühlen. Den landbaren Körper <$bodyShort> mit Atmosphäre kennt in diesem System jeder Bewohner.
+(notranslate)(flirt)Ich glaube nicht, dass die Bewohner des Systems den landbaren Körper <$bodyShort> mit Atmosphäre nicht kennen. Aber mach auf jeden Fall weiter.
 
 @FSSLandableAtmoAlreadyDiscovered_PopulatedSystem_Short <!-- Bereits bekannter landbarer Körper in einem bewohnten System gescannt. Variablen: <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre in bewohntem System: <$bodyShort>
+(notranslate)(allbusiness)Bekannter landbarer Himmelskörper mit Atmosphäre in bewohntem System: <$bodyShort>
 (notranslate)Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre. Das System ist bewohnt.
-(profanity)(notranslate)Was die Bewohner hier schon vor dir wussten: <$bodyShort> ist landbar und hat eine Atmosphäre.
-(flirt)(notranslate)Laut Scanner und den Bewohnern des Systems ist <$bodyShort> ist landbar und hat eine Atmosphäre.
+(notranslate)(profanity)Was die Bewohner hier schon vor dir wussten: <$bodyShort> ist landbar und hat eine Atmosphäre.
+(notranslate)(flirt)Laut Scanner und den Bewohnern des Systems ist <$bodyShort> ist landbar und hat eine Atmosphäre.
 
 @FSSSignalCountAnnouncement <!-- Gefundene Signale auf einem Körper. Variablen: <$signal_count_string>, <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)<$signal_count_string> auf <$bodyShort>.
+(notranslate)(allbusiness)<$signal_count_string> auf <$bodyShort>.
 (notranslate)Unsere Scans zeigen <$signal_count_string> auf <$bodyShort>.
-(profanity)(notranslate)Auch wenn es <$signal_count_string> auf <$bodyShort> gibt, bitte versuche nicht zu landen. Bei deinen Fähigkeiten bringst du uns nur um.
-(flirt)(notranslate)<commander>, wir haben <$signal_count_string> auf <$bodyShort> entdeckt. Du findest aber auch immer was!
+(notranslate)(profanity)Auch wenn es <$signal_count_string> auf <$bodyShort> gibt, bitte versuche nicht zu landen. Bei deinen Fähigkeiten bringst du uns nur um.
+(notranslate)(flirt)<commander>, wir haben <$signal_count_string> auf <$bodyShort> entdeckt. Du findest aber auch immer was!
 
 
 <!-- SYSTEMINFORMATIONEN
 
 @HighGradeEmissionsCandidate <!-- Wenn es vermutlich High Grade Emissions im System gibt. Variablen: <$emissionTypes>
-(allbusiness)(notranslate)Hochgradige Emissionen möglich: <$emissionTypes>
+(notranslate)(allbusiness)Hochgradige Emissionen möglich: <$emissionTypes>
 (notranslate)In diesem System gibt es eventuell hochgradige Emissionen des Typs <$emissionTypes>.
-(profanity)(notranslate)Im Gegensatz zu dir scheinen wenigstens die Emissionen in diesem System hochgradig zu sein. Findest du die <$emissionTypes>?
-(flirt)(notranslate)Das System hat vermutlich hochgradige Emissionen des Typs <$emissionTypes>. Wollen wir sie gemeinsam suchen?
+(notranslate)(profanity)Im Gegensatz zu dir scheinen wenigstens die Emissionen in diesem System hochgradig zu sein. Findest du die <$emissionTypes>?
+(notranslate)(flirt)Das System hat vermutlich hochgradige Emissionen des Typs <$emissionTypes>. Wollen wir sie gemeinsam suchen?
 
 @SystemDiscovery <!-- Der erste Spieler, der ein System betritt gilt als dessen Entdecker.
 REPLACE
-(allbusiness)(notranslate)Unbekanntes System entdeckt.
+(notranslate)(allbusiness)Unbekanntes System entdeckt.
 (notranslate)Dieses System ist in keinen Datenbanken verzeichnet.
-(profanity)(notranslate)Das System ist so einsam und unbekannt wie du.
-(flirt)(notranslate)Wir sind die ersten hier. So schön einsam hier, nur wir beide...
+(notranslate)(profanity)Das System ist so einsam und unbekannt wie du.
+(notranslate)(flirt)Wir sind die ersten hier. So schön einsam hier, nur wir beide...
 
 @ReachedHomeSystem <!-- Wenn man in sein eingestelltes Heimatsystem springt.
 REPLACE
-(allbusiness)(notranslate)Heimatsystem betreten.
+(notranslate)(allbusiness)Heimatsystem betreten.
 (notranslate)Wir sind in unser Heimatsystem gesprungen.
-(profanity)(notranslate)Das hier nennst du unser zu Hause? Bin ich dich wenigstens für ein paar Stunden los?
-(flirt)(notranslate)Wir sind zu Hause. Zu Hause ist es immer noch am schönsten.
+(notranslate)(profanity)Das hier nennst du unser zu Hause? Bin ich dich wenigstens für ein paar Stunden los?
+(notranslate)(flirt)Wir sind zu Hause. Zu Hause ist es immer noch am schönsten.
 
 @R2RAllDoneInSystem <!-- Wenn man alle relevanten Ziele in einer geplanten Road-to-Riches gescannt hat.
 REPLACE
-(allbusiness)(notranslate)Alle relevanten Signale gescannt.
+(notranslate)(allbusiness)Alle relevanten Signale gescannt.
 (notranslate)Wir haben alle relevanten und wertvollen Signal erfasst.
-(profanity)(notranslate)Reicht jetzt, der Rest hier ist nur Schrott. Ab zum nächsten System
-(flirt)(notranslate)Lass uns weiterziehen, hier gibt es keinen spannenden Signale mehr.
+(notranslate)(profanity)Reicht jetzt, der Rest hier ist nur Schrott. Ab zum nächsten System
+(notranslate)(flirt)Lass uns weiterziehen, hier gibt es keinen spannenden Signale mehr.
 
 <!-- HIMMELSKÖRPER
 
