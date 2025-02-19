@@ -286,8 +286,8 @@ REPLACE
 REPLACE
 (allbusiness)(notranslate)<$signal_count_string> auf <$bodyShort>.
 (notranslate)Unsere Scans zeigen <$signal_count_string> auf <$bodyShort>.
-(profanity)(notranslate)Auch wenn es <$signal_count_string> auf Körper <$bodyShort> gibt, bitte versuche nicht zu landen. Bei deinen Fähigkeiten bringst du uns nur um.
-(flirt)(notranslate)<commander>, wir haben <$signal_count_string> auf Körper <$bodyShort> entdeckt. Du findest aber auch immer was!
+(profanity)(notranslate)Auch wenn es <$signal_count_string> auf <$bodyShort> gibt, bitte versuche nicht zu landen. Bei deinen Fähigkeiten bringst du uns nur um.
+(flirt)(notranslate)<commander>, wir haben <$signal_count_string> auf <$bodyShort> entdeckt. Du findest aber auch immer was!
 
 
 <!-- SYSTEMINFORMATIONEN
