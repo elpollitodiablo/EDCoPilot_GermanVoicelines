@@ -20,7 +20,8 @@ Commander RAZZAFRAG=Commander Razzafrag|my creator|Commander Razzafrag, my creat
 <!--Add your own entries below, and have fun with it!
 <!--
 Kernic=Kernik
-Commander=Kommander
+Commander=Kommandant
+commander=Kommandant
 (space)1(space)=(space)ein(space)
 bodies=planets
 Bodies=planets
