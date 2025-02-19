@@ -302,7 +302,7 @@ REPLACE
 REPLACE
 (allbusiness)(notranslate)Unbekanntes System entdeckt.
 (notranslate)Dieses System ist in keinen Datenbanken verzeichnet.
-(profanity)(notranslate)Das System ist so einfam und unbekannt wie du.
+(profanity)(notranslate)Das System ist so einsam und unbekannt wie du.
 (flirt)(notranslate)Wir sind die ersten hier. So schön einsam hier, nur wir beide...
 
 @ReachedHomeSystem <!-- Wenn man in sein eingestelltes Heimatsystem springt.
