@@ -47,3 +47,4 @@ auftankbar=zum Auftanken geeignet
 schöpfen=tanken
 betankbar=zum Auftanken geeignet
 Meilen=Kilometer
+Sie=du
