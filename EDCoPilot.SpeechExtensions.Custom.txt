@@ -251,7 +251,7 @@ REPLACE
 (allbusiness)(notranslate)Unbekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
 (notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar, hat eine Atmosphäre und bisher unentdeckt.
 (profanity)(notranslate)Du bis ein unverdienter Glückspilz. Köper <$bodyShort> ist landbar und bisher unbekannt. Dazu noch eine Atmosphäre, wirklich mehr Glück als Verstand...
-(flirt)(notranslate)Du hast wieder einen unbekannten Körper entdeckt! Und Körper <$bodyShort> ist sogar landbar mit einer Atmosphäre!
+(flirt)(notranslate)Du hast wieder einen landbaren Körper mit Atmosphäre entdeckt! Und Körper <$bodyShort> ist bisher unbekannt!
 
 @FSSLandableAtmoAlreadyDiscovered <!-- Bereits bekannter landbarer Körper gescannt. Variablen: <$bodyShort>
 REPLACE
@@ -272,7 +272,7 @@ REPLACE
 REPLACE
 (allbusiness)(notranslate)Bekannter landbarer Himmelskörper mit Atmosphäre entdeckt: <$bodyShort>
 (notranslate)Der gescannte Himmelskörper <$bodyShort> ist landbar und hat eine Atmosphäre. Das System ist aber bereits besiedelt und der Körper bekannt.
-(profanity)(notranslate)Kein Grund den Helden zu spielen. Den landbaren Körper <$bodyShort> mit Atmosphäre kennt in diesem System jeder Bewohner.
+(profanity)(notranslate)Kein Grund sich wie ein Held zu fühlen. Den landbaren Körper <$bodyShort> mit Atmosphäre kennt in diesem System jeder Bewohner.
 (flirt)(notranslate)Ich glaube nicht, dass die Bewohner des Systems den landbaren Körper <$bodyShort> mit Atmosphäre nicht kennen. Aber mach auf jeden Fall weiter.
 
 @FSSLandableAtmoAlreadyDiscovered_PopulatedSystem_Short <!-- Bereits bekannter landbarer Körper in einem bewohnten System gescannt. Variablen: <$bodyShort>
@@ -284,8 +284,8 @@ REPLACE
 
 @FSSSignalCountAnnouncement <!-- Gefundene Signale auf einem Körper. Variablen: <$signal_count_string>, <$bodyShort>
 REPLACE
-(allbusiness)(notranslate)<$signal_count_string> auf Körper <$bodyShort>.
-(notranslate)Unsere Scans zeigen <$signal_count_string> auf Körper <$bodyShort>.
+(allbusiness)(notranslate)<$signal_count_string> auf <$bodyShort>.
+(notranslate)Unsere Scans zeigen <$signal_count_string> auf <$bodyShort>.
 (profanity)(notranslate)Auch wenn es <$signal_count_string> auf Körper <$bodyShort> gibt, bitte versuche nicht zu landen. Bei deinen Fähigkeiten bringst du uns nur um.
 (flirt)(notranslate)<commander>, wir haben <$signal_count_string> auf Körper <$bodyShort> entdeckt. Du findest aber auch immer was!
 
