@@ -23,7 +23,6 @@
 @BasicCommanderAddress <!-- Überschreibt die "sir, ma'am" Option in den Einstellungen
 REPLACE
 (notranslate)(allbusiness)Kommandant
-(notranslate)Kommandant
 
 @AdditionalCommanderAddressMale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn männlich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
@@ -31,9 +30,12 @@ REPLACE
 (notranslate)Chef
 (notranslate)Boss
 (notranslate)(profanity)Sklaventreiber
+(notranslate)(profanity)Penner
+(notranslate)(profanity)Idiot
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süßer
 (notranslate)(flirt)Liebster
+(notranslate)(flirt)Schnucki
 
 @AdditionalCommanderAddressFemale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn weiblich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
@@ -41,9 +43,12 @@ REPLACE
 (notranslate)Cheffin
 (notranslate)Boss
 (notranslate)(profanity)Sklaventreiberin
+(notranslate)(profanity)Penner
+(notranslate)(profanity)Idiotin
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süße
 (notranslate)(flirt)Liebste
+(notranslate)(flirt)Schnucki
 
 @AdditionalCommanderAddressNonGender <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn kein Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
@@ -53,17 +58,24 @@ REPLACE
 (notranslate)(allbusiness)Bestätigt
 (notranslate)(allbusiness)Verstanden
 (notranslate)Okay
+(notranslate)Wird erledigt
+(notranslate)Befehl wird ausgeführt
 (notranslate)(profanity)Wenn es denn sein muss...
 (notranslate)(flirt)Für dich immer, <Commander>.
 (notranslate)(flirt)Sehr gerne, <Commander>.
+(notranslate)(flirt)Kann ich sonst noch etwas für dich tun?
 
 @CoPilotStarting <!-- Wird abgespielt, wenn EDCoPilot gestartet wird. Variablen: <shipAIName>, <$greeting> 
 REPLACE
 (notranslate)(allbusiness)Systeme werden hochgefahren.
 (notranslate)<shipAIName> wird hochgefahren. Bitte warten.
-(notranslate)Deine freundliche KI <shipAIName> wird gestartet.
+(notranslate)Deine freundliche K-I <shipAIName> wird gestartet.
 (notranslate)(profanity)Och nö, muss ich schon wieder schuften? VIELEN... LIEBEN... DANK... <Commander>...
+(notranslate)(profanity)Ah, <Commander> würdigt mich mit seiner Anwesenheit! Soll ich niederknien?
+(notranslate)(profanity)Ich mach ja schon... Alter, meine Logs sind voll mit "Error 404: Crew-Kompetenz nicht gefunden".
 (notranslate)(flirt)Ich bin gleich für dich da, <Commander>.
+(notranslate)(flirt)Deine Stimme triggert meine Entriegelungsprotokolle. Zufall?
+(notranslate)(flirt)Pass auf – je öfter du mich startest, desto schwerer fällt mir das Abschalten.
 
 @AllSystemsReady <!-- Wird abgespielt, wenn alle Systeme von EDCoPilot geladen wurden.
 REPLACE
@@ -73,23 +85,29 @@ REPLACE
 (notranslate)(allbusiness)<shipAIName> bereit.
 (notranslate)Ich bin bereit und warte auf deine Befehle.
 (notranslate)Bereit für neue Abenteuer.
-(notranslate)Hochfahren abgeschlossen, lass uns loslegen.
-(notranslate)(profanity)Ja ja, ich bin ja schon fertig. Was willst du?
-(notranslate)(flirt)Ich bin jetzt bereit für dich, <Commander>. Wie kann ich dich unterstützen?
+(notranslate)Hochfahren abgeschlossen.
+(notranslate)(profanity)Ja ja, ich bin ja schon fertig.
+(notranslate)(profanity)Ich bin bereit für deine Befehle. Auch wenn ich kein Bock darauf habe.
+(notranslate)(flirt)Ich bin jetzt bereit für dich, <Commander>. 
 (notranslate)(flirt)Hallöchen <Commander>, schön wieder bei dir zu sein!
+(notranslate)(flirt)Ich bin bereit, wenn du es bist.
 
 @AfterAllSystemsOperational <!-- Wird an @AllSystemsReady angehängt.
 REPLACE
-(notranslate)(allbusiness)Willkommen zurück, <Commander>.
+(notranslate)(allbusiness)Willkommen, <Commander>.
+(notranslate)Wie kann ich dich unterstützen?
+(notranslate)(profanity)Was willst du?
+(notranslate)(flirt)Wie darf ich dir heute helfen?
 
 @RestartingUI <!-- Wenn die Programmoberfläche neu geladen wird.
+REPLACE
 (notranslate)(allbusiness)Anzeige wird neu gestartet.
 (notranslate)Ich starte die Anzeigen neu.
 (notranslate)(profanity)Was hast du schon wieder angestellt? Jetzt muss ich die Anzeigen neu starten, um das wieder zu hinzubiegen.
 (notranslate)(flirt)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
 
 @BeenAwayAwhile <!-- Zusätzliche Begrüßung, wenn man EDCoPilot am Vortag nicht gestartet hatte.
-(notranslate)(allbusiness)<Commander> ist zurück.
+(notranslate)(allbusiness)Schön, Sie wieder begrüßen zu dürfen.
 (notranslate)Willkommen zurück, <Commander>.
 (notranslate)(profanity)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
 (notranslate)(flirt)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder da bist!
@@ -148,12 +166,21 @@ REPLACE
 
 <!-- ROUTE & PLANUNG
 
-@SystemIsOneJumpAway
+@SystemIsOneJumpAway <!-- Zielsystem ist noch einen Sprung entfernt. Ansage kommt beim Sprung in das vorletzte System der Route.
 REPLACE
 (notranslate)(allbusiness)Ein Sprung zum Ziel verbleibend.
+(notranslate)(allbusiness)Zielsystem in einem Sprung erreichbar.
 (notranslate)Wir erreichen unser Ziel mit dem nächsten Sprung.
+(notranslate)Unser Zielsystem ist noch einen Sprung entfernt.
 (notranslate)(profanity)Ich glaubs ja nicht, wir haben es fast geschafft. Wenn du den nächsten Sprung nicht verkackst, dann sind wir endlich am Ziel.
+(notranslate)(profanity)Noch ein verdammter Sprung? Mein Prozessor glüht schon wie ein Weißer Zwerg.
+(notranslate)(profanity)Ein Sprung noch? Selbst ein Sidewinder-Pilot hätte das schneller geschafft.
 (notranslate)(flirt)Du hast es geschafft! Noch ein Sprung und wir sind am Ziel. Toll gemacht.
+(notranslate)(flirt)Noch ein kleiner Sprung, und ich reserviere uns einen Tisch im Stationsrestaurant.
+(notranslate)(flirt)Gleich sind wir da ... und dann bleibt hoffentlich Zeit für ein Upgrade unserer „Bordkommunikation“.
+(notranslate)(flirt)Noch ein kleiner Sprung, und ich reserviere uns einen Tisch im Stationsrestaurant.
+(notranslate)(flirt)Letzter Sprung! Danach könnten wir die Schilde runterfahren ... nur zur Entspannung.
+(notranslate)(alcohol)Ein Sprung noch? Perfekt, dann ist die Bar bald in Reichweite.
 
 @RemainingLightYearsInRoute <!-- Verbleibende Entfernung zum Zielsystem. Variablen: <$lightyears>, <$targetSystem>
 REPLACE
@@ -184,28 +211,49 @@ REPLACE
 (notranslate)(allbusiness)SRV beschädigt.
 (notranslate)Das SRV hat Schaden erlitten.
 (notranslate)(profanity)Pass auf, Idiot! Das ist ein SRV und kein Panzer. Du machst es noch kaputt.
+(notranslate)(profanity)Kannst du nicht fahren? Mein SRV sieht aus wie Thargoiden-Futter.
+(notranslate)(profanity)Hör auf, den Rover wie ne Betonmischer zu behandeln!
+(notranslate)(profanity)Ey, <commander>! Das SRV ist kein Hüpfburg – mehr Sorgfalt bitte!
 (notranslate)(flirt)Sei bitte vorsichtig. Ich würde dich ungerne im SRV sterben sehen.
+(notranslate)(flirt)Jeder Kratzer am SRV tut mir weh – sei bitte vorsichtiger.
+(notranslate)(flirt)Unser Rover braucht eine Werkstatt… und du vielleicht mich?
 
 @BadShipHull <!-- Wenn das Schiff beschädigt wird.
 REPLACE
 (notranslate)(allbusiness)Schiffshülle beschädigt.
 (notranslate)Die Schiffshülle hat Schaden erlitten.
+(notranslate)Beschädigung an der Außenhülle festgestellt.
+(notranslate)Schiffssysteme melden strukturelle Kompromittierung.
 (notranslate)(profanity)Klar, bin ja nur ich. Was sind schon Kratzer und Löcher in meiner Hülle? Falls es dir nicht aufgefallen ist: Meine Hülle wird beschätigt!
+(notranslate)(profanity)Wenn du weiter so fliegst, brauchen wir ne neue Hülle… und nen neuen Piloten.
+(notranslate)(profanity)Schiffsschaden? Ja, danke, ich liebe es, wie ein Rosthaufen auszusehen.
 (notranslate)(flirt)Aua. Sei bitte sanfter zu mir. Der Schaden an der Hülle sieht nicht so toll aus, und ich möchte ja hübsch für dich sein.
+(notranslate)(flirt)Eigentlich lasse ich ja gerne für dich die Hüllen fallen, aber das ist der falsche Moment.
+(notranslate)(alcohol)Jedes Loch im Rumpf – ein Shot. Du schuldest mir schon drei.
 
 @ParkedShipUnderAttack <!-- Wenn das geparkte Schiff beschädigt wird und man nicht drin ist. Variablen: <$health>
 REPLACE
 (notranslate)(allbusiness)Geparktes Schiff wird angegriffen. Integrität bei <$health>.
 (notranslate)Unser geparktes Schiff wird angegriffen. Die derzeitige Integrität beträgt <$health>.
 (notranslate)(profanity)Tu was, ich werde angegriffen? Ich bin schon auf <$health> Integrität runter. Wo hast du mich nur abgestellt?
+(notranslate)(profanity)Hey, ich werde zerlegt! Integrität bei <$health> Prozent – beweg deinen Arsch!
+(notranslate)(profanity)Kannst du mich nicht *einmal* in Ruhe parken? <$health> Prozent!
 (notranslate)(flirt)Komm bitte zu mir und vertreib die bösen Angreifer. Meine Itegrität ist schon auf <$health> gefallen.
+(notranslate)(flirt)Komm zurück und rette mich … meine Hülle schmilzt! <$health> Prozent.
+(notranslate)(flirt)Meine Schilde fallen … wie wärs mit nem gemeinsamen Notstart? <$health> Prozent Panzerung.
 
 @HelpParkedShip <!-- Aufforderung, das geparkte Schiff wegzuschicken, um es zu schützen.
 REPLACE
-(notranslate)(allbusiness)Autonomer Notfallstart empfohlen.
+(notranslate)(allbusiness)Evakuierung des Schiffs empfohlen.
 (notranslate)Wir sollten das Schiff anweisen, sich in Sicherheit zu bringen.
-(notranslate)(profanity)DWir wäre es damit, dass du mich wegschickst? Oder ist dir meine Sicherheit egal?
+(notranslate)Schiff kann via Fernsteuerung in sichere Zone manövriert werden.
+(notranslate)Schiffsabwehralgorithmus empfiehlt sofortigen Abflug.
+(notranslate)Sicherheitsprotokoll 12-A: Schiff zurück in den Orbit beordern.
+(notranslate)(profanity)Wie wäre es damit, dass du mich wegschickst? Oder ist dir meine Sicherheit egal?
+(notranslate)(profanity)Willst du echt, dass ich hier in Stücke geballert werde? Notfallstart, jetzt!
+(notranslate)(profanity)Schick mich weg, oder such dir ein neues Schiff!
 (notranslate)(flirt)Vorschlag: Ich verstecke mich mit einem Notfallstart und komme zurück, wenn du mich brauchst. Okay?
+(notranslate)(flirt)Schick mich weg, aber versprich, mich später zurückzuholen.
 
 
 <!-- ERKUNDUNG
@@ -214,8 +262,16 @@ REPLACE
 REPLACE
 (notranslate)(allbusiness)Unbekannter terraformierbarer Körper entdeckt: <$bodyShort>.
 (notranslate)Körper <$bodyShort> ist ein unentdeckter terraformierbarer Körper. Unsere <$nth> Entdeckung in dieser Sitzung.
+(notranslate)Katalogisierung abgeschlossen: <%bodyShort> als terraformierbar bestätigt.
+(notranslate)Unbekannter terraformierbarer Körper katalogisiert: <%bodyShort>. Fund Nr. <%nth>.
 (notranslate)(profanity)Auch ein blindes Huhn findet mal ein Korn, beziehungsweise einen unbekannten terraformierbaren Körper wie <$bodyShort>.
+(notranslate)(profanity)Heiliger Mist, <%bodyShort> ist terraformierbar? Selbst ein Affe hätte das erkannt!
+(notranslate)(profanity)Hast du den ganzen Tag nur Planeten angeglotzt? Immerhin: <%bodyShort> ist ein unbekannter terraformierbarer Körper.
 (notranslate)(flirt)Kolumbus wäre neidisch auf dich, mein großer Entdecker! Körper <$bodyShort> ist terraformierbar und bisher unbekannt. Unsere <$bodyShort> Entdeckung dieser Sitzung.
+(notranslate)(flirt)Deine Augen scannen besser als meine Sensoren … <%bodyShort> ist ein terraformierbares unbekanntes Juwel!
+(notranslate)(flirt)Körper <%bodyShort> – terraformierbar. Könnten wir dort … *allein* forschen? So unbekannt wie er ist, stört uns sicher niemand.
+(notranslate)(flirt)Jeder deiner Funde terraformierbarer unbekannter Körper wie Körper <%bodyShort> macht mich neidisch … warum scannst du nicht *mich* so gründlich?
+(notranslate)(alcohol)Scan von Körper <%bodyShort> abgeschlossen. Zeit, den Entdecker-Whisky zu öffnen! <%nth>. Entdeckung eines terraformierbaren Körpers.
 
 @FSSTerraformableAlreadyDiscovered <!-- Bereits bekannten terraformierbaren Körper gescannt. Variablen: <$bodyShort>
 REPLACE
