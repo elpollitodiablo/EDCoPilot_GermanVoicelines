@@ -75,7 +75,7 @@ REPLACE
 (notranslate)(profanity)Ich mach ja schon... Alter, meine Logs sind voll mit "Error 404: Crew-Kompetenz nicht gefunden".
 (notranslate)(flirt)Ich bin gleich für dich da, <Commander>.
 (notranslate)(flirt)Deine Stimme triggert meine Entriegelungsprotokolle. Zufall?
-(notranslate)(flirt)Pass auf – je öfter du mich startest, desto schwerer fällt mir das Abschalten.
+(notranslate)(flirt)Pass auf – je öfter du mich startest und mit mir Zeit verbringst, desto schwerer fällt es mir wieder abzuschalten.
 
 @AllSystemsReady <!-- Wird abgespielt, wenn alle Systeme von EDCoPilot geladen wurden.
 REPLACE
@@ -107,10 +107,10 @@ REPLACE
 (notranslate)(flirt)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
 
 @BeenAwayAwhile <!-- Zusätzliche Begrüßung, wenn man EDCoPilot am Vortag nicht gestartet hatte.
-(notranslate)(allbusiness)Schön, Sie wieder begrüßen zu dürfen.
+(notranslate)(allbusiness)Schön, dich wieder begrüßen zu dürfen.
 (notranslate)Willkommen zurück, <Commander>.
 (notranslate)(profanity)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
-(notranslate)(flirt)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder da bist!
+(notranslate)(flirt)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder bei mir bist!
 
 @StartingFactionCheck <!-- Nach dem Start, wenn EDCoPilot einen Fraktionscheck macht.
 REPLACE
@@ -123,15 +123,23 @@ REPLACE
 REPLACE
 (notranslate)(allbusiness)Weißen Zwerg erkannt. Überladung des Frameshift Drive möglich.
 (notranslate)Das System beinhaltet einen weißen Zwerg. Du kannst hier unseren Frameshift Antrieb für 50% mehr Sprungreichweite überladen.
+(notranslate)Frameshiftüberladung am lokalen weißen Zwerg möglich. Wir sollten vorsichtig sein, aber 50% mehr Sprungreichweite sind es wert.
 (notranslate)(profanity)Oh nein, hier gibt es einen weißen Zwerg. Wenn du unseren Frameshift Antrieb unbedingt überladen musst, bring uns wenigstens nicht um.
+(notranslate)(profanity)Hast du vor, unseren Antrieb am weißen Zwerg zu überladen? Sei blos vorsichtig!
+(notranslate)(profanity)Ein weißer Zwerg? Hier? Nein, ich glaube ich hab keine gesehen... oh, den meinst du? Upsi.
 (notranslate)(flirt)Oh, es gibt hier einen weißen Zwerg. Lass uns den Frameshift Antrieb überleden und 50% mehr Reichweite bekommen.
+(notranslate)(flirt)So klein ist ein weißer Zwerg gar nicht. Wenn du seinen Schweif sanft streichselt, dann gibt er uns sicher zusätzlich Energie für den Antrieb.
 
 @NeutronSupercharge <!-- Wird bei Ankunft im System abgespielt, wenn ein überladbarer Neutronenstern vorhanden ist.
 REPLACE
 (notranslate)(allbusiness)Neutronenstern erkannt. Starke Überladung des Frameshift Drive möglich.
 (notranslate)Du kannst hier am Neutronenstern unseren Frameshift Antrieb für 300% mehr Sprungreichweite überladen.
-(notranslate)(profanity)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube ja nicht, dass du das tun solltest, bei deinem Können...
-(notranslate)(flirt)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll. Du schaffst das!
+(notranslate)Es gibt hier einen Neutronenstern. Unser Antrieb kann am Jet um 300% überladen werden.
+(notranslate)Der Jet dieses Neutronensterns lässt eine F-S-D Überladung um 300% zu. Aber es ist vorsicht geboten.
+(notranslate)(profanity)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube aber nicht, dass du das tun solltest, bei deinem Können...
+(notranslate)(profanity)Sein oder nicht sein? Das ist hier die Frage. Obwohl, eigentlich nicht. Du zerstörst uns sicher im Jet dieses Neutronensterns...
+(notranslate)(flirt)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll, oder? Du schaffst das!
+(notranslate)(flirt)Ich wäre auch gerne so nah bei dir, wie die Teilchen im Neutronenstern beieinander. Stattdessen nutzt du sie sicher, um noch weiter von hier wegzukommen.
 
 
 <!-- HANDEL & MARKT
@@ -139,7 +147,7 @@ REPLACE
 @TradeMarketHasChanged <!-- Nach einer Marktaktualisierung sind nicht mehr alle Gegenstände verfügbar oder haben sich geändert.
 REPLACE
 (notranslate)(allbusiness)Marktübersicht aktualisiert. Es gab Änderungen in der Verfügbarkeit.
-(notranslate)Die Marktübersicht wurde aktualisiert. Für unsere Gegenstände sind leider nicht mehr alle Angebote oder Anfragen verfügbar.
+(notranslate)Die Marktübersicht wurde aktualisiert. Für unsere Gegenstände sind nicht mehr alle Angebote oder Anfragen verfügbar.
 (notranslate)(profanity)Du warst mal wieder zu langsam. Der Markt war schneller als du und die Lage für einige Gegenstände hat sich geändert.
 (notranslate)(flirt)Oh Mist, <commander>, unser Plan geht nicht mehr auf. Für einige geplante Gegenstände hat sich die Marktsituation geändert.
 
