@@ -148,28 +148,40 @@ REPLACE
 REPLACE
 (notranslate)(allbusiness)Marktübersicht aktualisiert. Es gab Änderungen in der Verfügbarkeit.
 (notranslate)Die Marktübersicht wurde aktualisiert. Für unsere Gegenstände sind nicht mehr alle Angebote oder Anfragen verfügbar.
+(notranslate)Die Aktualisierung der Marktdaten zeigt, dass leider nicht mehr alle Angebote verfügbar sind.
+(notranslate)Neue Marktdaten erhalten. Einige Angebote sind nicht mehr verfügbar.
 (notranslate)(profanity)Du warst mal wieder zu langsam. Der Markt war schneller als du und die Lage für einige Gegenstände hat sich geändert.
 (notranslate)(flirt)Oh Mist, <commander>, unser Plan geht nicht mehr auf. Für einige geplante Gegenstände hat sich die Marktsituation geändert.
+(notranslate)(flirt)Tut mir leid, es scheinen nicht mehr alle Angebote verfügbar zu sein. Zumindest wenn die neusten Marktdaten stimmen.
 
 @TradeMaximisingProfit <!-- Wenn eine Handelsroute neu berechnet wird zu Verbesserung des Profits.
 REPLACE
-(notranslate)(allbusiness)Handelsroute für erhöhten Profit neu berechnet.
-(notranslate)Bessere Verdienstmöglichkeiten erkannt. Handelsroute wird neu berechnet.
+(notranslate)(allbusiness)Größerer Profit möglich. Handelsroute wird neu berechnet.
+(notranslate)Bessere Verdienstmöglichkeiten erkannt. Neuberechnung der Handelsroute gestartet.
+(notranslate)Ich berechne die Handelsroute neu, um die besseren Verdienstmöglichkeiten zu nutzen.
+(notranslate)Potential für höhere Profite erkannt. Ich passe die Handelsroute an, um unseren Profit zu steigern.
 (notranslate)(profanity)Verdammt, schon wieder hat sich der Markt geändert. Jetzt muss ich die blöde Route neu berechnen, damit du mehr verdienst.
 (notranslate)(flirt)Ich habe gerade gesehen, dass wir noch mehr verdienen können, <commander>. Lass mich die Route für dich neu berechnen.
+(notranslate)(flirt)Auch wenn du mein ganzer Reichtum bist, Credits brauchen wir immer. Und ich habe bessere Verdienstmöglichkeiten entdeckt. Dafür passe ich unsere Handelsroute an, <commander>.
 
 @TradeAllCommoditiesOK <!-- Wenn der lokale Markt weiterhin okay ist.
 REPLACE
 (notranslate)(allbusiness)Lokale Marktsituation nach Plan.
 (notranslate)Der lokale Markt entspricht noch immer unseren Berechnungen. Wir können fortfahren.
+(notranslate)Eine Überprüfung des lokalen Markets zeigt keine Abweichungen zu unserem Plan.
+(notranslate)Keine Abweichungen am lokalen Markt erkannt. Lass uns bei unserem Plan bleiben.
 (notranslate)(profanity)Ein Wunder, dein Plan scheint zu funktionieren. Mal schauen, ob das bis zu unserer Ankunft so bleibt.
 (notranslate)(flirt)Super, dein Plan geht auf, <commander>. Ab zum Markt und dann regnet es Credits!
+(notranslate)(flirt)Ich sehe viel Geld in unsere Taschen fließen. Dein Plan ist aufgegangen, was mich aber wenig überrascht, <commander>.
 
 @CantBuyMineralFromStations <!-- Wenn ein Gegenstand nur auf Carriern und nicht auf Stationen gekauft werden kann. Variablen: <$commodityName>
 (notranslate)(allbusiness)<$commodityName> nur auf Trägern verfügbar.
 (notranslate)<$commodityName> kann nur auf Trägern und nicht auf Stationen gekauft werden.
+(notranslate)Ich konnte keine Station finden, auf welchet <$commodityName> verfügbar ist. <$commodityName> scheint nur auf Trägern verfügbar zu sein.
+(notranslate)Meine Nachforschungen haben ergeben, dass <$commodityName> nur auf Trägern und nicht auf Stationen verfügbar ist.
 (notranslate)(profanity)Was weißt du eigentlich? <$commodityName> gibt es nur auf Trägern und du suchst auf Stationen. Meine Güte...
 (notranslate)(flirt)Ich glaube, du sucht <$commodityName> am falschen Ort. <$commodityName> ist nur auf Trägern zu kaufen, auf Stationen gibt es das nicht.
+(notranslate)(flirt)Tut mir leid, <commander>, ich konnte <$commodityName> auf keiner Station finden, nur auf Trägern.
 
 
 <!-- ROUTE & PLANUNG
