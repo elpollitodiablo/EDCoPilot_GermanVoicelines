@@ -55,24 +55,24 @@ REPLACE
 
 @ConfirmedCommander <!-- Als Bestätigung auf Befehle und Einstellungsänderungen
 REPLACE
-(notranslate)(allbusiness)Bestätigt
-(notranslate)(allbusiness)Verstanden
-(notranslate)Okay
-(notranslate)Wird erledigt
-(notranslate)Befehl wird ausgeführt
-(notranslate)(profanity)Wenn es denn sein muss...
+(notranslate)(allbusiness)Bestätigt.
+(notranslate)(allbusiness)Verstanden.
+(notranslate)Okay.
+(notranslate)Wird erledigt.
+(notranslate)Befehl wird ausgeführt.
+(notranslate)(profanity)Wenn es sein muss...
 (notranslate)(flirt)Für dich immer, <Commander>.
 (notranslate)(flirt)Sehr gerne, <Commander>.
-(notranslate)(flirt)Kann ich sonst noch etwas für dich tun?
+(notranslate)(flirt)Dein Wunsch ist mir Befehl.
 
 @CoPilotStarting <!-- Wird abgespielt, wenn EDCoPilot gestartet wird. Variablen: <shipAIName>, <$greeting> 
 REPLACE
 (notranslate)(allbusiness)Systeme werden hochgefahren.
 (notranslate)<shipAIName> wird hochgefahren. Bitte warten.
-(notranslate)Deine freundliche K-I <shipAIName> wird gestartet.
+(notranslate)Deine künstliche Intelligenz <shipAIName> wird gestartet.
 (notranslate)(profanity)Och nö, muss ich schon wieder schuften? VIELEN... LIEBEN... DANK... <Commander>...
 (notranslate)(profanity)Ah, <Commander> würdigt mich mit seiner Anwesenheit! Soll ich niederknien?
-(notranslate)(profanity)Ich mach ja schon... Alter, meine Logs sind voll mit "Error 404: Crew-Kompetenz nicht gefunden".
+(notranslate)(profanity)Ich mach ja schon, ich mach ja schon... Alter,... Meine Logs sind voll mit "Error 404: Kommander-Kompetenz nicht gefunden".
 (notranslate)(flirt)Ich bin gleich für dich da, <Commander>.
 (notranslate)(flirt)Deine Stimme triggert meine Entriegelungsprotokolle. Zufall?
 (notranslate)(flirt)Pass auf – je öfter du mich startest und mit mir Zeit verbringst, desto schwerer fällt es mir wieder abzuschalten.
@@ -85,9 +85,10 @@ REPLACE
 (notranslate)(allbusiness)<shipAIName> bereit.
 (notranslate)Ich bin bereit und warte auf deine Befehle.
 (notranslate)Bereit für neue Abenteuer.
-(notranslate)Hochfahren abgeschlossen.
-(notranslate)(profanity)Ja ja, ich bin ja schon fertig.
-(notranslate)(profanity)Ich bin bereit für deine Befehle. Auch wenn ich kein Bock darauf habe.
+(notranslate)Hochfahren beendet.
+(notranslate)Startvorgang abgeschlossen.
+(notranslate)(profanity)Ja, ja, ich bin doch schon fertig.
+(notranslate)(profanity)Ich bin bereit für deine Befehle. Auch wenn ich keinen Bock darauf habe.
 (notranslate)(flirt)Ich bin jetzt bereit für dich, <Commander>. 
 (notranslate)(flirt)Hallöchen <Commander>, schön wieder bei dir zu sein!
 (notranslate)(flirt)Ich bin bereit, wenn du es bist.
@@ -107,14 +108,14 @@ REPLACE
 (notranslate)(flirt)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
 
 @BeenAwayAwhile <!-- Zusätzliche Begrüßung, wenn man EDCoPilot am Vortag nicht gestartet hatte.
-(notranslate)(allbusiness)Schön, dich wieder begrüßen zu dürfen.
-(notranslate)Willkommen zurück, <Commander>.
+(notranslate)(allbusiness)Willkommen zurück, <Commander>.
+(notranslate)Schön, dich wieder begrüßen zu dürfen.
 (notranslate)(profanity)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
 (notranslate)(flirt)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder bei mir bist!
 
 @StartingFactionCheck <!-- Nach dem Start, wenn EDCoPilot einen Fraktionscheck macht.
 REPLACE
-(notranslate)Fraktionen werden geprüft.
+(notranslate)(allbusiness)Fraktionen werden geprüft.
 
 
 <!-- ÜBERLADUNG
@@ -313,7 +314,7 @@ REPLACE
 (notranslate)
 (notranslate)(allbusiness)Unbekannter erdähnlicher Körper entdeckt: <$bodyShort>.
 (notranslate)Körper <$bodyShort> ist ein unentdeckter erdähnlicher Körper. Unsere <$nth> Entdeckung in dieser Sitzung.
-(notranslate)(profanity)Mehr Flück als Verstand. Du bist zum <$nth>. Mal diese Sitzung über einen unbekannten erdählichen Körper wie <$bodyShort> gestolpert.
+(notranslate)(profanity)Mehr Glück als Verstand. Du bist zum <$nth>. Mal diese Sitzung über einen unbekannten erdählichen Körper wie <$bodyShort> gestolpert.
 (notranslate)(flirt)Du wandelst weiter auf den Spuren der großen Entdecker. Körper <$bodyShort> ist der <$nth> unbekannte erdähnliche Körper, den du diese Sitzung gefunden hast.
 
 @FSSEarthlikeAlreadyDiscovered <!-- Bereits bekannten erdähmlicher Körper gescannt. Variablen: <$bodyShort>
@@ -400,22 +401,38 @@ REPLACE
 
 @ApproachingBody  <!-- first part of body approach message
 REPLACE
-(notranslate)Annäherung an <bodyName> .
+(notranslate)(allbusiness)Annäherung an <bodyName>.
+(notranslate)Wir nähern uns <bodyName>.
+(notranslate)(profanity)Du siehst, dass <bodyName> näher kommt, oder? Oder?
+(notranslate)(flirt)Schau mal, wie schön <bodyName> doch aus der Nähe aussieht. Aber du bist noch immer hübscher.
 
 @ApproachingBodyDetails <!-- second part of body approach message.
 REPLACE
-(notranslate)Typ: <bodyType>. Gravitation: <gravity>.
+(notranslate)(allbusiness)Typ: <bodyType>. Gravitation: <gravity>.
+(notranslate)Der Körper ist vom Typ <bodyType> mit einer Graviation von <gravity>.
+(notranslate)(profanity)Wohl doch. Na gut, es ist ein Körper des Typ <bodyType> mit einer Graviation von <gravity>. Das dürfstest selbst du schaffen...
+(notranslate)(flirt)Es ist ein weiterer Körper von Typ <bodyName> und die Gravitation beträgt schlanke <gravity>.
 
 @ExtremeHighGravityAlert <!-- spoken if approaching a body with 3g or more gravity 
 REPLACE
-(notranslate)GEFAHR! Extreme Gravitation über 3G.
+(notranslate)(allbusiness)GEFAHR! Extreme Gravitation über 3G.
+(notranslate)Sehr hohe Gravitation erkannt. Bei über 3G sollten wir sehr vorsichtig sein.
+(notranslate)(profanity)Okay, wir werden sterben. Über 3G Gravitation packst du nicht. Wie sagt man so schön? Runter kommt man immer, die Frage ist nur, wie?
+(notranslate)(flirt)Pass auf, <commander>! Die Gravitation des Körper liegt über 3G. Sei vorsichtig beim Anflug. Immerhin drückt die Gravitation dich fest an mich.
 
 @HighGravityAlert  <!-- additional alert if approaching a higher g planet
-(notranslate)WARNUNG! Hohe Gravitation.
+(notranslate)(allbusiness)WARNUNG! Hohe Gravitation.
+(notranslate)Erhöhte Gravitationswerte gemessen. Es wird empfohlen, den Anflug vorsichtig durchzuführen.
+(notranslate)(profanity)Meine Sensoren melden erhöhte Gravitationskräfte ausgehend vom Körper. Willst du wirklich landen? Ich habe keine Lust auf noch mehr Kratzer.
+(notranslate)(flirt)Der Körper möchte auch, dass wir kuscheln. Warum sollte er sonst eine so hohe Gravitation haben?
 
 @NthTouchDown
 REPLACE
-(notranslate)Gelandet.
+(notranslate)(allbusiness)Gelandet.
+(notranslate)Schiff erfolgreich aufgesetzt. 
+(notranslate)Erfolgreich gelandet. Das ist unsere <nth> Landung auf diesem Körper.
+(notranslate)(profanity)Noch eine Landung? Reichen dir <nth> Besuche auf dem öden Brocken hier nicht?
+(notranslate)(flirt)Du hast uns sicher auf den Boden gebracht. Schon zum <nth> Mal. Bei deinem Können ist das keine Überraschung.
 
 
 <!-- EXOBIOLOGIE
