@@ -290,7 +290,7 @@ REPLACE
 (notranslate)(flirt)Kolumbus wäre neidisch auf dich, mein großer Entdecker! Körper <$bodyShort> ist terraformierbar und bisher unbekannt. Unsere <$bodyShort> Entdeckung dieser Sitzung.
 (notranslate)(flirt)Deine Augen scannen besser als meine Sensoren … <%bodyShort> ist ein terraformierbares unbekanntes Juwel!
 (notranslate)(flirt)Körper <%bodyShort> – terraformierbar. Könnten wir dort … *allein* forschen? So unbekannt wie er ist, stört uns sicher niemand.
-(notranslate)(flirt)Jeder deiner Funde terraformierbarer unbekannter Körper wie Körper <%bodyShort> macht mich neidisch … warum scannst du nicht *mich* so gründlich?
+(notranslate)(flirt)Jeder deiner Funde terraformierbarer unbekannter Körper wie <$bodyShort> macht mich neidisch … warum scannst du nicht MICH so gründlich?
 (notranslate)(alcohol)Scan von Körper <%bodyShort> abgeschlossen. Zeit, den Entdecker-Whisky zu öffnen! <%nth>. Entdeckung eines terraformierbaren Körpers.
 
 @FSSTerraformableAlreadyDiscovered <!-- Bereits bekannten terraformierbaren Körper gescannt. Variablen: <$bodyShort>
@@ -543,7 +543,7 @@ REPLACE
 
 @LandingPadDirection  <!-- pad directions when you request docking, at starports
 REPLACE
-(notranslate)Zugewiesener Landeplatz: <landingPad>. Richtung: <padPos>.
+(notranslate)Zugewiesener Landeplatz: <landingPad>(space). Richtung: <padPos>.
 
 @ExternalLandingPadAnnounce <!-- pad number announcements at other stations (not starports)
 REPLACE

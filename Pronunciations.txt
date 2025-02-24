@@ -19,6 +19,9 @@ Commander RAZZAFRAG=Commander Razzafrag|my creator|Commander Razzafrag, my creat
 <!--
 <!--Add your own entries below, and have fun with it!
 <!--
+KernicDE=Kernik
+kernicde=Kernik
+Kernicde=Kernik
 Kernic=Kernik
 Commander=Kommandant
 commander=Kommandant
@@ -46,6 +49,7 @@ Zero=0
 KM-=K(space)M-
 auftankbar=zum Auftanken geeignet
 schöpfen=tanken
+geschöpft=zum auftanken verwendet
 betankbar=zum Auftanken geeignet
 aufgetankt=zum auftanken verwendet
 Meilen=Kilometer
