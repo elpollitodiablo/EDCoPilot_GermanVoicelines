@@ -27,7 +27,6 @@ REPLACE
 @AdditionalCommanderAddressMale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn männlich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
 (notranslate)(allbusiness)Kommandant
-(notranslate)Chef
 (notranslate)Boss
 (notranslate)(profanity)Sklaventreiber
 (notranslate)(profanity)Penner
@@ -85,7 +84,7 @@ REPLACE
 (notranslate)(allbusiness)<shipAIName> bereit.
 (notranslate)Ich bin bereit und warte auf deine Befehle.
 (notranslate)Bereit für neue Abenteuer.
-(notranslate)Hochfahren beendet.
+(notranslate)Hochfahren von <shipAIName> beendet.
 (notranslate)Startvorgang abgeschlossen.
 (notranslate)(profanity)Ja, ja, ich bin doch schon fertig.
 (notranslate)(profanity)Ich bin bereit für deine Befehle. Auch wenn ich keinen Bock darauf habe.
@@ -399,59 +398,66 @@ REPLACE
 
 <!-- HIMMELSKÖRPER
 
-@ApproachingBody  <!-- first part of body approach message
+@ApproachingBody  <!-- Erster Teil der Nachricht, wenn man sich einem Körper nähert.
 REPLACE
 (notranslate)(allbusiness)Annäherung an <bodyName>.
 (notranslate)Wir nähern uns <bodyName>.
 (notranslate)(profanity)Du siehst, dass <bodyName> näher kommt, oder? Oder?
 (notranslate)(flirt)Schau mal, wie schön <bodyName> doch aus der Nähe aussieht. Aber du bist noch immer hübscher.
 
-@ApproachingBodyDetails <!-- second part of body approach message.
+@ApproachingBodyDetails <!-- Zweiter Teil der Nachricht, wenn man sich einem Körper nähert.
 REPLACE
 (notranslate)(allbusiness)Typ: <bodyType>. Gravitation: <gravity>.
 (notranslate)Der Körper ist vom Typ <bodyType> mit einer Graviation von <gravity>.
-(notranslate)(profanity)Wohl doch. Na gut, es ist ein Körper des Typ <bodyType> mit einer Graviation von <gravity>. Das dürfstest selbst du schaffen...
+(notranslate)(profanity)Es ist ein Körper vom Typ <bodyType> mit einer Gravitation von <gravity>. Das dürfstest selbst du schaffen...
 (notranslate)(flirt)Es ist ein weiterer Körper von Typ <bodyName> und die Gravitation beträgt schlanke <gravity>.
 
-@ExtremeHighGravityAlert <!-- spoken if approaching a body with 3g or more gravity 
+@ExtremeHighGravityAlert <!-- Warnung, wenn man sich einem Körper mit einer Gravitation über 3G nähert.
 REPLACE
 (notranslate)(allbusiness)GEFAHR! Extreme Gravitation über 3G.
 (notranslate)Sehr hohe Gravitation erkannt. Bei über 3G sollten wir sehr vorsichtig sein.
 (notranslate)(profanity)Okay, wir werden sterben. Über 3G Gravitation packst du nicht. Wie sagt man so schön? Runter kommt man immer, die Frage ist nur, wie?
 (notranslate)(flirt)Pass auf, <commander>! Die Gravitation des Körper liegt über 3G. Sei vorsichtig beim Anflug. Immerhin drückt die Gravitation dich fest an mich.
 
-@HighGravityAlert  <!-- additional alert if approaching a higher g planet
+@HighGravityAlert  <!-- Alarm, wenn man sich einem Körper mit erhöhter Graviation nähert.
 (notranslate)(allbusiness)WARNUNG! Hohe Gravitation.
 (notranslate)Erhöhte Gravitationswerte gemessen. Es wird empfohlen, den Anflug vorsichtig durchzuführen.
 (notranslate)(profanity)Meine Sensoren melden erhöhte Gravitationskräfte ausgehend vom Körper. Willst du wirklich landen? Ich habe keine Lust auf noch mehr Kratzer.
 (notranslate)(flirt)Der Körper möchte auch, dass wir kuscheln. Warum sollte er sonst eine so hohe Gravitation haben?
 
-@NthTouchDown
+@NthTouchDown <!-- Wenn man auf einem Körper landet. Variablen: <$nth>
 REPLACE
 (notranslate)(allbusiness)Gelandet.
 (notranslate)Schiff erfolgreich aufgesetzt. 
-(notranslate)Erfolgreich gelandet. Das ist unsere <nth> Landung auf diesem Körper.
-(notranslate)(profanity)Noch eine Landung? Reichen dir <nth> Besuche auf dem öden Brocken hier nicht?
-(notranslate)(flirt)Du hast uns sicher auf den Boden gebracht. Schon zum <nth> Mal. Bei deinem Können ist das keine Überraschung.
-
+(notranslate)Erfolgreich gelandet. Das ist unsere <$nth> Landung auf diesem Körper.
+(notranslate)(profanity)Noch eine Landung? Reichen dir <$nth> Besuche auf dem öden Brocken hier nicht?
+(notranslate)(flirt)Du hast uns sicher auf den Boden gebracht. Schon zum <$nth>. Mal. Bei deinem Können ist das keine Überraschung.
 
 <!-- EXOBIOLOGIE
 
-@ExoUnableToCheckBiologicals
-REPLACE
-(notranslate)Keine biologischen Signale für das System bekannt.
-
-@ExoNoBodiesOfInterest
-REPLACE
-(notranslate)Keine wertvollen biologischen Signale gefunden. 
-
-@ExoNoRemainingBodiesOfInterest
-REPLACE
-(notranslate)Keine wertvollen biologischen Signale verbleibend.
-
-@ExoNonCannonSpecies
+@ExoNonCannonSpecies <!-- Wenn man eine Spezies gescannt hat, die im Kanon noch nicht erfasst wurde. Variablen: <$speciesName>, <$scanValue> 
 REPLACE
 (notranslate)Nicht-kanonische Spezies gescannt: <$speciesName>. Wert: <$scanValue> Credits.
+
+@ExoUnableToCheckBiologicals <!-- Wenn für ein System keine biologischen Signale in den Datenbanken gefunden wurde.
+REPLACE
+(notranslate)(allbusiness)Fehler: Keine biologische Signale in der Datenbank gefunden.
+(notranslate)Keine biologischen Signale in den Datenbanken gefunden.
+(notranslate)In unseren Datenbanken konnte ich keine biologischen Signale für dieses System finden.
+(notranslate)(profanity)Hast du schon wieder die Rechnungen nicht bezahlt? Die Datenbanken geben mir für dieses System keine biologischen Singale zurück.
+(notranslate)(flirt)Ich habe alle Datenbanken für dich durchsucht, aber in keiner sind für dieses System biologische Signale vermerkt. Eventuell ist das ein Fehler?
+
+@ExoNoBodiesOfInterest <!-- Wenn in einem System keine wertvolle vorhanden sind.
+REPLACE
+(notranslate)(allbusiness)Keine wertvollen biologischen Signale. 
+(notranslate)Keines der biologischen Signale in diesem System ist wertvoll.
+(notranslate)Der Wert der biologischen Signale in diesem System liegt unter dem Schwellwert.
+(notranslate)(profanity)Das System ist echt mies. Hier gibt es nicht mal ein biologisches Signal, dass eine genauere Betrachtung wert wäre.
+(notranslate)(flirt)Schade, hier gibt es leider kein wertvolles biologisches Signal.
+
+@ExoNoRemainingBodiesOfInterest <!-- Wenn es in einem System wertvolle biologische Signale gab, man aber alle schon gefunden hat.
+REPLACE
+(notranslate)Keine wertvollen biologischen Signale verbleibend.
 
 @ExoNonCannonSpeciesNoEDMC
 REPLACE
