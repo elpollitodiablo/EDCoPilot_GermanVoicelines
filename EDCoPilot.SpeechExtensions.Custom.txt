@@ -408,7 +408,7 @@ REPLACE
 @ApproachingBodyDetails <!-- Zweiter Teil der Nachricht, wenn man sich einem Körper nähert.
 REPLACE
 (notranslate)(allbusiness)Typ: <bodyType>. Gravitation: <gravity>.
-(notranslate)Der Körper ist vom Typ <bodyType> mit einer Graviation von <gravity>.
+(notranslate)Es ist ein <bodyType> mit einer Graviation von <gravity>.
 (notranslate)(profanity)Es ist ein Körper vom Typ <bodyType> mit einer Gravitation von <gravity>. Das dürfstest selbst du schaffen...
 (notranslate)(flirt)Es ist ein weiterer Körper von Typ <bodyName> und die Gravitation beträgt schlanke <gravity>.
 
