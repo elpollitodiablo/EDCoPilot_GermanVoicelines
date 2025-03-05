@@ -437,7 +437,17 @@ REPLACE
 
 @ExoNonCannonSpecies <!-- Wenn man eine Spezies gescannt hat, die im Kanon noch nicht erfasst wurde. Variablen: <$speciesName>, <$scanValue> 
 REPLACE
-(notranslate)Nicht-kanonische Spezies gescannt: <$speciesName>. Wert: <$scanValue> Credits.
+(notranslate)(allbusiness)Unbekannte Spezies gescannt: <$speciesName>. Wert: <$scanValue> Credits.
+(notranslate)Spezies <$speciesName> mit einem Wert von <$scanValue> Credits ist bisher im Kanon nicht gelistet.
+(notranslate)(profanity)Ist nicht wahr? DU... hast eine Spezies entdeckt, die noch nicht im Kanon ist? Zumindest finde ich <$speciesName> dort nicht. Eventuell ein Fehler. Wenn nicht, dann können wir <$scanValue> Credits verdienen.
+(notranslate)(flirt)<$speciesName> ist eine unbekannte Spezies! Mit den <$scanValue> Credits kannst du mich später so richtig verwöhnen lassen!
+
+@ExoNonCannonSpeciesNoEDMC <!-- Wenn man eine Spezies gescannt hat, die im Kanon UND auf EDMC noch nicht erfasst wurde. Variablen: <$speciesName>, <$scanValue> 
+REPLACE
+(notranslate)(allbusiness)<$speciesName> werde in Kanon noch EDMC gefunden. Wert: <$scanValue> Credits.
+(notranslate)Gescannte Spezies <$speciesName> in Kanon und EDMC unbekannt. Der geschätzt Wert beträgt <$scanValue> Credits.
+(notranslate)(profanity)Nicht nur im Kanon, sondern auch auf EDMC ist <$speciesName>? Das war nur Glück! Die <$scanValue> Credits hast du nicht verdient...
+(notranslate)(flirt)<commander>, ich habe sicherheitshalber alles doppelt geprüft. Du bist wirklich der gloreiche Entdecker von <$speciesName> und wir haben Anspruch auf <$scanValue> Credits. Was bekomme ich schönes für das Geld?
 
 @ExoUnableToCheckBiologicals <!-- Wenn für ein System keine biologischen Signale in den Datenbanken gefunden wurde.
 REPLACE
@@ -464,30 +474,6 @@ REPLACE
 (notranslate)Gescannte Spezies <$speciesName> in Kanon und EDMC unbekannt. Wert: <$scanValue> Credits.
 
 @ExoFindClosestUnscannedSpeciesClosestSample
-REPLACE
-(notranslate) 
-
-@ExoCommentOnBio-FonticuluaDigitos
-REPLACE
-(notranslate) 
-
-@ExoCommentOnBio-ConchaLabiata
-REPLACE
-(notranslate) 
-
-@ExoCommentOnBio-OsseusPumice
-REPLACE
-(notranslate) 
-
-@ExoCommentOnBio-FungoidaStabitis
-REPLACE
-(notranslate) 
-
-@ExoCommentOnBio-TussockIgnis
-REPLACE
-(notranslate) 
-
-@ExoCommentOnBio-
 REPLACE
 (notranslate) 
 
@@ -559,7 +545,29 @@ REPLACE
 REPLACE
 (notranslate)Alle Spezies auf diesem Himmelskörper analysiert.
 
+@ExoCommentOnBio-FonticuluaDigitos
+REPLACE
+(notranslate) 
 
+@ExoCommentOnBio-ConchaLabiata
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-OsseusPumice
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-FungoidaStabitis
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-TussockIgnis
+REPLACE
+(notranslate) 
+
+@ExoCommentOnBio-
+REPLACE
+(notranslate) 
 
 <!-- Traveling
 <!--
