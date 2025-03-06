@@ -31,6 +31,7 @@ REPLACE
 (notranslate)(profanity)Sklaventreiber
 (notranslate)(profanity)Penner
 (notranslate)(profanity)Idiot
+(notranslate)(profanity)Möchtegern
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süßer
 (notranslate)(flirt)Liebster
@@ -432,6 +433,37 @@ REPLACE
 (notranslate)Erfolgreich gelandet. Das ist unsere <$nth> Landung auf diesem Körper.
 (notranslate)(profanity)Noch eine Landung? Reichen dir <$nth> Besuche auf dem öden Brocken hier nicht?
 (notranslate)(flirt)Du hast uns sicher auf den Boden gebracht. Schon zum <$nth>. Mal. Bei deinem Können ist das keine Überraschung.
+
+<!-- FREUNDE UND SOZIALES
+
+@FriendOnline <!-- Wenn ein Freund online kommt. Variablen: <friendName>
+REPLACE
+(notranslate)(allbusiness)Freund <friendName> online.
+(notranslate)Dein Freund <friendName> ist jetzt online.
+(notranslate)(profanity)Dein angeblicher Freund <friendName> ist jetzt online.
+(notranslate)(flirt)Schau mal, <friendName> ist jetzt online. Vernachlässige mich aber nicht!
+
+@FriendOffline <!-- Wenn ein Freund offline geht. Variablen: <friendName>
+REPLACE
+(notranslate)(allbusiness))Freund <friendName> offline.
+(notranslate)Dein Freund <friendName> ist jetzt offline.
+(notranslate)Dein Freund <friendName> ist offline gegangen.
+(notranslate)(profanity)War klar, du hast <friendName> dazu gebracht, offline zu gehen.
+(notranslate)(flirt)Juhu, du hast jetzt mehr Zeit für mich, weil <friendName> offline ist.
+
+@FriendRequest <!-- Wenn man eine Freundschaftsanfrage erhält. Variablen: <friendName>
+REPLACE
+(notranslate)(allbusiness)Neue Freundschaftsanfrage von <friendName>.
+(notranslate)Wir haben eine Freundschaftsanfrage von <friendName> erhalten.
+(notranslate)(profanity)Wie hast du es geschafft, dass <friendName> mit dir befreundet sein will? Wie viel Credits hast du geboten?
+(notranslate)(flirt)Schau mal, <friendName> will unser Freund sein. Nicht nur ich mag dich wohl.
+
+@WingInviteReceived <!-- Wenn du in einen Wing eingeladen wirst. Variablen: <invitingCommander>
+REPLACE
+(notranslate)(allbusiness)Wingeinladung von <invitingCommander> erhalten.
+(notranslate)Wir haben eine Einladung in den Wing von <invitingCommander> erhalten.
+(notranslate)(profanity)Ist das ein Hinterhalt, oder warum sollte dich <invitingCommander> sonst im Wing haben wollen?
+(notranslate)(flirt)<invitingCommander> hat uns in seinen Wing eingeladen. Muss ich dich jetzt teilen?
 
 <!-- EXOBIOLOGIE
 
