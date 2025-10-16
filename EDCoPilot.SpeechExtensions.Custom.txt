@@ -70,8 +70,8 @@ REPLACE
 (notranslate)(allbusiness)Systeme werden hochgefahren.
 (notranslate)<shipAIName> wird hochgefahren. Bitte warten.
 (notranslate)Deine künstliche Intelligenz <shipAIName> wird gestartet.
-(notranslate)(profanity)Och nö, muss ich schon wieder schuften? VIELEN... LIEBEN... DANK... <Commander>...
-(notranslate)(profanity)Ah, <Commander> würdigt mich mit seiner Anwesenheit! Soll ich niederknien?
+(notranslate)(profanity)Och nö, VIELEN... LIEBEN... DANK... <Commander>...
+(notranslate)(profanity)Ah, <Commander> würdigt mich mit seiner Anwesenheit! Kaffee vielleicht?
 (notranslate)(profanity)Ich mach ja schon, ich mach ja schon... Alter,... Meine Logs sind voll mit "Error 404: Kommander-Kompetenz nicht gefunden".
 (notranslate)(flirt)Ich bin gleich für dich da, <Commander>.
 (notranslate)(flirt)Deine Stimme triggert meine Entriegelungsprotokolle. Zufall?
@@ -221,7 +221,7 @@ REPLACE
 REPLACE
 (notranslate)(allbusiness)Sprung nach <$targetSystem>.
 (notranslate)Wir springen in das System <$targetSystem>. 
-(notranslate)(profanity)2, 1, Risiko. Bitte bring uns beim Sprung nach <$targetSystem> nicht um.
+(notranslate)(profanity)Zwo eins Risiko. Bitte bring uns beim Sprung nach <$targetSystem> nicht um.
 (notranslate)(flirt)Hüpf, hüpf und schon sind wir im System <$targetSystem>.
 
 
