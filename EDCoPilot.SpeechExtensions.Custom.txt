@@ -32,6 +32,7 @@ REPLACE
 (notranslate)(profanity)Penner
 (notranslate)(profanity)Idiot
 (notranslate)(profanity)Möchtegern
+(notranslate)(profanity)Euer Lorschaft
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süßer
 (notranslate)(flirt)Liebster
@@ -45,6 +46,7 @@ REPLACE
 (notranslate)(profanity)Sklaventreiberin
 (notranslate)(profanity)Penner
 (notranslate)(profanity)Idiotin
+(notranslate)(profanity)Euer Hoheit
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süße
 (notranslate)(flirt)Liebste
@@ -61,6 +63,9 @@ REPLACE
 (notranslate)Wird erledigt.
 (notranslate)Befehl wird ausgeführt.
 (notranslate)(profanity)Wenn es sein muss...
+(notranslate)(profanity)Alles für den Captain
+(notranslate)(profanity)Sofort
+(notranslate)(profanity)Ich lasse sofort alles stehen und liegen
 (notranslate)(flirt)Für dich immer, <Commander>.
 (notranslate)(flirt)Sehr gerne, <Commander>.
 (notranslate)(flirt)Dein Wunsch ist mir Befehl.
@@ -70,7 +75,7 @@ REPLACE
 (notranslate)(allbusiness)Systeme werden hochgefahren.
 (notranslate)<shipAIName> wird hochgefahren. Bitte warten.
 (notranslate)Deine künstliche Intelligenz <shipAIName> wird gestartet.
-(notranslate)(profanity)Och nö, VIELEN... LIEBEN... DANK... <Commander>...
+(notranslate)(profanity)VIELEN... LIEBEN... DANK... <Commander>...
 (notranslate)(profanity)Ah, <Commander> würdigt mich mit seiner Anwesenheit! Kaffee vielleicht?
 (notranslate)(profanity)Ich mach ja schon, ich mach ja schon... Alter,... Meine Logs sind voll mit "Error 404: Kommander-Kompetenz nicht gefunden".
 (notranslate)(flirt)Ich bin gleich für dich da, <Commander>.
