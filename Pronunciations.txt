@@ -19,19 +19,15 @@ Commander RAZZAFRAG=Commander Razzafrag|my creator|Commander Razzafrag, my creat
 <!--
 <!--Add your own entries below, and have fun with it!
 <!--
-KernicDE=Kernik
-kernicde=Kernik
-Kernicde=Kernik
-Kernic=Kernik
-Commander=Kommandant
-commander=Kommandant
+Commander=Commander
+commander=commandant
 (space)1(space)=(space)ein(space)
 bodies=planets
 Bodies=planets
 Body=planet
 body=planet
-Scoopable=tankable
-scoopable=tankable
+Scoopable=tankbar
+scoopable=tankbar
 Noten=Credits
 noten=credits
 eins biologisches=ein biologisches
