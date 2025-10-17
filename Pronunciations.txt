@@ -21,6 +21,8 @@ Commander RAZZAFRAG=Commander Razzafrag|my creator|Commander Razzafrag, my creat
 <!--
 Commander=Commander
 commander=commandant
+KI=K(space)I
+AI=K(space)I
 (space)1(space)=(space)ein(space)
 bodies=planets
 Bodies=planets
