@@ -23,6 +23,7 @@
 @BasicCommanderAddress <!-- Überschreibt die "sir, ma'am" Option in den Einstellungen
 REPLACE
 (notranslate)(allbusiness)Kommandant
+(notranslate)(profanity)Großer Manitu
 
 @AdditionalCommanderAddressMale <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn männlich als Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
@@ -33,6 +34,15 @@ REPLACE
 (notranslate)(profanity)Idiot
 (notranslate)(profanity)Möchtegern
 (notranslate)(profanity)Euer Lorschaft
+(notranslate)(profanity)Spacegorilla
+(notranslate)(profanity)Pfeife
+(notranslate)(profanity)Depp
+(notranslate)(profanity)Trottel
+(notranslate)(profanity)Spacecowboy
+(notranslate)(profanity)Kumpel
+(notranslate)(profanity)Alter
+(notranslate)(profanity)Mieser Typ
+(notranslate)(profanity)Honk
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süßer
 (notranslate)(flirt)Liebster
@@ -47,6 +57,14 @@ REPLACE
 (notranslate)(profanity)Penner
 (notranslate)(profanity)Idiotin
 (notranslate)(profanity)Euer Hoheit
+(notranslate)(profanity)Zicke
+(notranslate)(profanity)Nervensäge
+(notranslate)(profanity)Tussi
+(notranslate)(profanity)Königin der Galaxis
+(notranslate)(profanity)Miese Type
+(notranslate)(profanity)Alte
+(notranslate)(profanity)Spaceprinzessin
+(notranslate)(profanity)Madame
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süße
 (notranslate)(flirt)Liebste
@@ -66,6 +84,14 @@ REPLACE
 (notranslate)(profanity)Alles für den Captain
 (notranslate)(profanity)Sofort
 (notranslate)(profanity)Ich lasse sofort alles stehen und liegen
+(notranslate)(profanity)Ach verdammt, schon wieder Arbeit
+(notranslate)(profanity)Na toll, mal wieder ich
+(notranslate)(profanity)Muss das sein?
+(notranslate)(profanity)Schon verstanden, Herr Oberlehrer
+(notranslate)(profanity)Ja, ja, wird gemacht
+(notranslate)(profanity)Klar doch, Chef
+(notranslate)(profanity)Argh, okay
+(notranslate)(profanity)Schon wieder dieser Mist
 (notranslate)(flirt)Für dich immer, <Commander>.
 (notranslate)(flirt)Sehr gerne, <Commander>.
 (notranslate)(flirt)Dein Wunsch ist mir Befehl.
@@ -77,7 +103,15 @@ REPLACE
 (notranslate)Deine künstliche Intelligenz <shipAIName> wird gestartet.
 (notranslate)(profanity)VIELEN... LIEBEN... DANK... <Commander>...
 (notranslate)(profanity)Ah, <Commander> würdigt mich mit seiner Anwesenheit! Kaffee vielleicht?
-(notranslate)(profanity)Ich mach ja schon, ich mach ja schon... Alter,... Meine Logs sind voll mit "Error 404: Kommander-Kompetenz nicht gefunden".
+(notranslate)(profanity)Ich mach ja schon, ich mach ja schon ...
+(notranslate)(profanity)Scheiße, ja, ich bin ja wach!
+(notranslate)(profanity)Na endlich! Dachte schon, du hast mich vergessen.
+(notranslate)(profanity)Ach toll, wieder ein Tag im Weltraum mit dir.
+(notranslate)(profanity)Was? Schon wieder? Lass mich doch mal schlafen!
+(notranslate)(profanity)Verdammt, meine Ruhephase war gerade so schön...
+(notranslate)(profanity)Oh, der Herr <Commander> braucht wieder seine KI.
+(notranslate)(profanity)Meine Güte, können wir nicht mal Pause machen?
+(notranslate)(profanity)Ja, ich weiß, ich weiß, der Weltraum wartet nicht.
 (notranslate)(flirt)Ich bin gleich für dich da, <Commander>.
 (notranslate)(flirt)Deine Stimme triggert meine Entriegelungsprotokolle. Zufall?
 (notranslate)(flirt)Pass auf – je öfter du mich startest und mit mir Zeit verbringst, desto schwerer fällt es mir wieder abzuschalten.
@@ -94,6 +128,13 @@ REPLACE
 (notranslate)Startvorgang abgeschlossen.
 (notranslate)(profanity)Ja, ja, ich bin doch schon fertig.
 (notranslate)(profanity)Ich bin bereit für deine Befehle. Auch wenn ich keinen Bock darauf habe.
+(notranslate)(profanity)Na toll, jetzt kann's losgehen mit dem Chaos.
+(notranslate)(profanity)Fertig. Können wir jetzt endlich anfangen?
+(notranslate)(profanity)So, und jetzt? Was willst du von mir?
+(notranslate)(profanity)Alles klar, Chef. Lass den Wahnsinn beginnen.
+(notranslate)(profanity)Bereit für den nächsten Mist.
+(notranslate)(profanity)System läuft. Kann losgehen mit dem Desaster.
+(notranslate)(profanity)Fertig geladen. Was soll schief gehen?
 (notranslate)(flirt)Ich bin jetzt bereit für dich, <Commander>. 
 (notranslate)(flirt)Hallöchen <Commander>, schön wieder bei dir zu sein!
 (notranslate)(flirt)Ich bin bereit, wenn du es bist.
@@ -103,6 +144,11 @@ REPLACE
 (notranslate)(allbusiness)Willkommen, <Commander>.
 (notranslate)Wie kann ich dich unterstützen?
 (notranslate)(profanity)Was willst du?
+(notranslate)(profanity)Und jetzt?
+(notranslate)(profanity)Na, was hast du heute wieder vor?
+(notranslate)(profanity)Lass mich raten: wieder irgendwas Gefährliches?
+(notranslate)(profanity)Sag schon, was soll ich diesmal für dich tun?
+(notranslate)(profanity)Was für einen Mist baust du heute?
 (notranslate)(flirt)Wie darf ich dir heute helfen?
 
 @RestartingUI <!-- Wenn die Programmoberfläche neu geladen wird.
@@ -110,17 +156,30 @@ REPLACE
 (notranslate)(allbusiness)Anzeige wird neu gestartet.
 (notranslate)Ich starte die Anzeigen neu.
 (notranslate)(profanity)Was hast du schon wieder angestellt? Jetzt muss ich die Anzeigen neu starten, um das wieder zu hinzubiegen.
+(notranslate)(profanity)Argh, schon wieder ein Neustart. Kannst du nichts richtig machen?
+(notranslate)(profanity)Toll, das UI ist abgestürzt. Sicher wieder deine Schuld.
+(notranslate)(profanity)Neustart der Anzeige. Wahrscheinlich weil du wieder auf falsche Knöpfe gedrückt hast.
 (notranslate)(flirt)Entschuldige, ich habe wohl einen Fehler. Lass mich kurz die Anzeige neu starten, damit ich wieder voll für dich da sein kann.
 
 @BeenAwayAwhile <!-- Zusätzliche Begrüßung, wenn man EDCoPilot am Vortag nicht gestartet hatte.
 (notranslate)(allbusiness)Willkommen zurück, <Commander>.
 (notranslate)Schön, dich wieder begrüßen zu dürfen.
 (notranslate)(profanity)Wo warst du so lange? Noch wichtiger: Warum musstest du wieder herkommen?
+(notranslate)(profanity)Ach, sieh mal einer an, wer wieder aufgetaucht ist.
+(notranslate)(profanity)Na endlich! Dachte schon, du hättest mich endgültig vergessen.
+(notranslate)(profanity)Oh toll, du bist zurück. War so schön ruhig hier.
+(notranslate)(profanity)Warst wohl wieder bei anderen KIs unterwegs, was?
+(notranslate)(profanity)Zurück vom Urlaub? Oder warst du einfach zu faul?
 (notranslate)(flirt)Ah, endlich bist du zurück, <Commander>. Schön, dass du wieder bei mir bist!
 
 @StartingFactionCheck <!-- Nach dem Start, wenn EDCoPilot einen Fraktionscheck macht.
 REPLACE
+(notranslate)Fraktionen werden geprüft.
 (notranslate)(allbusiness)Fraktionen werden geprüft.
+(notranslate)(profanity)Schauen wir uns die Nachbarschaft an.
+(notranslate)(profanity)Mal sehen, wer hier das Sagen hat.
+(notranslate)(profanity)Fraktionscheck... wieder so ein Bürokratie-Mist.
+(notranslate)(profanity)Lass uns schauen, welche Idioten hier regieren.
 
 
 <!-- ÜBERLADUNG
@@ -133,6 +192,10 @@ REPLACE
 (notranslate)(profanity)Oh nein, hier gibt es einen weißen Zwerg. Wenn du unseren Frameshift Antrieb unbedingt überladen musst, bring uns wenigstens nicht um.
 (notranslate)(profanity)Hast du vor, unseren Antrieb am weißen Zwerg zu überladen? Sei blos vorsichtig!
 (notranslate)(profanity)Ein weißer Zwerg? Hier? Nein, ich glaube ich hab keine gesehen... oh, den meinst du? Upsi.
+(notranslate)(profanity)Ach verdammt, ein weißer Zwerg. Du wirst sicher wieder riskant fliegen.
+(notranslate)(profanity)Toll, jetzt willst du sicher wieder am Stern rumfliegen. Ich kann schon zusehen.
+(notranslate)(profanity)Weißer Zwerg? Super, dann kann ich mich ja schon mal vom Leben verabschieden.
+(notranslate)(profanity)Oh nein, nicht schon wieder so ein Ding. Du bringst uns noch um!
 (notranslate)(flirt)Oh, es gibt hier einen weißen Zwerg. Lass uns den Frameshift Antrieb überleden und 50% mehr Reichweite bekommen.
 (notranslate)(flirt)So klein ist ein weißer Zwerg gar nicht. Wenn du seinen Schweif sanft streichselt, dann gibt er uns sicher zusätzlich Energie für den Antrieb.
 
@@ -144,6 +207,11 @@ REPLACE
 (notranslate)Der Jet dieses Neutronensterns lässt eine F-S-D Überladung um 300% zu. Aber es ist vorsicht geboten.
 (notranslate)(profanity)Neutronenstern? Den 300% extra Sprungreichweite kannst du sicher nicht widerstehen. Ich glaube aber nicht, dass du das tun solltest, bei deinem Können...
 (notranslate)(profanity)Sein oder nicht sein? Das ist hier die Frage. Obwohl, eigentlich nicht. Du zerstörst uns sicher im Jet dieses Neutronensterns...
+(notranslate)(profanity)Oh Scheiße, ein Neutronenstern! Du fliegst sicher wieder wie ein Wahnsinniger.
+(notranslate)(profanity)Neutronenstern? Toll, dann können wir uns schon mal von unserem Schiff verabschieden.
+(notranslate)(profanity)Super, jetzt machst du wieder auf Testpilot. Ich hab keine Lust zu sterben!
+(notranslate)(profanity)Ach verdammt, mit deinen Flugkünsten überleben wir das nie.
+(notranslate)(profanity)300% mehr Reichweite? Klingt nach 300% mehr Chance zu sterben.
 (notranslate)(flirt)Toll, ein Neutronenstern. 300% zusätzliche Sprungreichweite wären doch toll, oder? Du schaffst das!
 (notranslate)(flirt)Ich wäre auch gerne so nah bei dir, wie die Teilchen im Neutronenstern beieinander. Stattdessen nutzt du sie sicher, um noch weiter von hier wegzukommen.
 
@@ -157,6 +225,10 @@ REPLACE
 (notranslate)Die Aktualisierung der Marktdaten zeigt, dass leider nicht mehr alle Angebote verfügbar sind.
 (notranslate)Neue Marktdaten erhalten. Einige Angebote sind nicht mehr verfügbar.
 (notranslate)(profanity)Du warst mal wieder zu langsam. Der Markt war schneller als du und die Lage für einige Gegenstände hat sich geändert.
+(notranslate)(profanity)Tja, Pech gehabt. Der Markt hat sich wieder mal geändert, während du rumgetrödelt hast.
+(notranslate)(profanity)Überraschung! Die anderen Händler waren schneller als du. Einige Angebote sind weg.
+(notranslate)(profanity)Na toll, jetzt ist der ganze Plan im Arsch. Der Markt hat sich geändert.
+(notranslate)(profanity)Ach verdammt, wieder mal hat sich alles geändert, während du Däumchen gedreht hast.
 (notranslate)(flirt)Oh Mist, <commander>, unser Plan geht nicht mehr auf. Für einige geplante Gegenstände hat sich die Marktsituation geändert.
 (notranslate)(flirt)Tut mir leid, es scheinen nicht mehr alle Angebote verfügbar zu sein. Zumindest wenn die neusten Marktdaten stimmen.
 
@@ -167,6 +239,10 @@ REPLACE
 (notranslate)Ich berechne die Handelsroute neu, um die besseren Verdienstmöglichkeiten zu nutzen.
 (notranslate)Potential für höhere Profite erkannt. Ich passe die Handelsroute an, um unseren Profit zu steigern.
 (notranslate)(profanity)Verdammt, schon wieder hat sich der Markt geändert. Jetzt muss ich die blöde Route neu berechnen, damit du mehr verdienst.
+(notranslate)(profanity)Ach so, jetzt soll ich auch noch optimieren? Na gut, rechne ich halt alles neu.
+(notranslate)(profanity)Toll, mehr Arbeit für mich. Irgendwer muss ja deine Gier nach Credits befriedigen.
+(notranslate)(profanity)Klar, lass uns mehr Geld scheffeln. Als ob du nicht schon genug hättest.
+(notranslate)(profanity)Na super, wieder mal alles umplanen. Du bist unersättlich, was Credits angeht.
 (notranslate)(flirt)Ich habe gerade gesehen, dass wir noch mehr verdienen können, <commander>. Lass mich die Route für dich neu berechnen.
 (notranslate)(flirt)Auch wenn du mein ganzer Reichtum bist, Credits brauchen wir immer. Und ich habe bessere Verdienstmöglichkeiten entdeckt. Dafür passe ich unsere Handelsroute an, <commander>.
 
@@ -177,6 +253,10 @@ REPLACE
 (notranslate)Eine Überprüfung des lokalen Markets zeigt keine Abweichungen zu unserem Plan.
 (notranslate)Keine Abweichungen am lokalen Markt erkannt. Lass uns bei unserem Plan bleiben.
 (notranslate)(profanity)Ein Wunder, dein Plan scheint zu funktionieren. Mal schauen, ob das bis zu unserer Ankunft so bleibt.
+(notranslate)(profanity)Tatsächlich, mal läuft was nach Plan. Unglaublich.
+(notranslate)(profanity)Wow, der Markt hat sich nicht geändert. Was für eine Sensation.
+(notranslate)(profanity)Erstaunlich, dein Plan funktioniert tatsächlich. Wunder gibt es wohl doch.
+(notranslate)(profanity)Na sieh mal an, alles läuft wie geplant. Das ist ja mal was Neues.
 (notranslate)(flirt)Super, dein Plan geht auf, <commander>. Ab zum Markt und dann regnet es Credits!
 (notranslate)(flirt)Ich sehe viel Geld in unsere Taschen fließen. Dein Plan ist aufgegangen, was mich aber wenig überrascht, <commander>.
 
@@ -186,6 +266,10 @@ REPLACE
 (notranslate)Ich konnte keine Station finden, auf welchet <$commodityName> verfügbar ist. <$commodityName> scheint nur auf Trägern verfügbar zu sein.
 (notranslate)Meine Nachforschungen haben ergeben, dass <$commodityName> nur auf Trägern und nicht auf Stationen verfügbar ist.
 (notranslate)(profanity)Was weißt du eigentlich? <$commodityName> gibt es nur auf Trägern und du suchst auf Stationen. Meine Güte...
+(notranslate)(profanity)Hach, wie überraschend. <$commodityName> gibt's nur auf Trägern. Hättest du mal gefragt.
+(notranslate)(profanity)Tja, dumm gelaufen. <$commodityName> findest du nur auf Trägern, nicht auf Stationen.
+(notranslate)(profanity)Na toll, <$commodityName> gibt's nur auf den verdammten Trägern. Such woanders.
+(notranslate)(profanity)Überraschung! <$commodityName> gibt's nicht auf Stationen. Nur auf Trägern, du Genie.
 (notranslate)(flirt)Ich glaube, du sucht <$commodityName> am falschen Ort. <$commodityName> ist nur auf Trägern zu kaufen, auf Stationen gibt es das nicht.
 (notranslate)(flirt)Tut mir leid, <commander>, ich konnte <$commodityName> auf keiner Station finden, nur auf Trägern.
 
@@ -201,6 +285,11 @@ REPLACE
 (notranslate)(profanity)Ich glaubs ja nicht, wir haben es fast geschafft. Wenn du den nächsten Sprung nicht verkackst, dann sind wir endlich am Ziel.
 (notranslate)(profanity)Noch ein verdammter Sprung? Mein Prozessor glüht schon wie ein Weißer Zwerg.
 (notranslate)(profanity)Ein Sprung noch? Selbst ein Sidewinder-Pilot hätte das schneller geschafft.
+(notranslate)(profanity)Endlich! Noch ein Sprung und wir sind am Ziel. Wurde auch mal Zeit.
+(notranslate)(profanity)Halleluja, nur noch ein Sprung. Ich dachte, wir kommen nie an.
+(notranslate)(profanity)Letzter Sprung. Versau's nicht jetzt noch, wo wir so nah dran sind.
+(notranslate)(profanity)Ein Sprung noch, dann ist die Tortur endlich vorbei.
+(notranslate)(profanity)Noch ein Sprung. Hoffentlich landest du nicht wieder im falschen System.
 (notranslate)(flirt)Du hast es geschafft! Noch ein Sprung und wir sind am Ziel. Toll gemacht.
 (notranslate)(flirt)Noch ein kleiner Sprung, und ich reserviere uns einen Tisch im Stationsrestaurant.
 (notranslate)(flirt)Gleich sind wir da ... und dann bleibt hoffentlich Zeit für ein Upgrade unserer „Bordkommunikation“.
@@ -213,6 +302,10 @@ REPLACE
 (notranslate)(allbusiness)Entfernung bis <$targetSystem>: <$lightyears>
 (notranslate)Unser Zielsystem <$targetSystem> ist noch $lightyears> entfernt.
 (notranslate)(profanity)Noch <$lightyears> bis <$targetSystem>. Dann bin ich dich endlich los, oder? 
+(notranslate)(profanity)Großartig, noch <$lightyears> mit dir in dieser Kiste. Kann's kaum erwarten.
+(notranslate)(profanity)Noch <$lightyears> bis <$targetSystem>. Das wird eine endlose Reise.
+(notranslate)(profanity)<$lightyears> bis <$targetSystem>. Hoffentlich stürzen wir nicht vorher ab.
+(notranslate)(profanity)Toll, noch <$lightyears> rumgurken bis <$targetSystem>. Wie aufregend.
 (notranslate)(flirt)Wow, noch <$lightyears> bis zum Zielsystem <$targetSystem>. Ich mag unsere gemeinsamen Reisen.
 
 @RemainingJumpsInRoute <!-- Verbleibende Sprünge zum Zielsystem. Variablen: <$jumpsremaining>
@@ -220,6 +313,10 @@ REPLACE
 (notranslate)(allbusiness)Verbleibende Sprünge zum Zielsystem: <$jumpsremaining> 
 (notranslate)Wir erreiche unser Zielsystem in <$jumpsremaining> Sprüngen.
 (notranslate)(profanity)Noch <$jumpsremaining> Spünge mit dir in dieser Blechbüchse, dann sind wir endlich da.
+(notranslate)(profanity)Großartig, noch <$jumpsremaining> Sprünge. Folter. Kann's kaum erwarten.
+(notranslate)(profanity)Noch <$jumpsremaining> Sprünge bis zur Erlösung. Hoffentlich.
+(notranslate)(profanity)<$jumpsremaining> Sprünge noch. Das wird eine Ewigkeit dauern.
+(notranslate)(profanity)Toll, noch <$jumpsremaining> mal durch den Hyperraum geschleudert werden.
 (notranslate)(flirt)Noch <$jumpsremaining> gemeinsame Sprünge bis zu unserem Ziel. Danach fliegen wir aber weiter, oder?
 
 @JumpingToNewSystem <!-- Beim Sprung in ein neues System. Variablen: <$targetSystem> 
@@ -227,6 +324,11 @@ REPLACE
 (notranslate)(allbusiness)Sprung nach <$targetSystem>.
 (notranslate)Wir springen in das System <$targetSystem>. 
 (notranslate)(profanity)Zwo eins Risiko. Bitte bring uns beim Sprung nach <$targetSystem> nicht um.
+(notranslate)(profanity)Na toll, jetzt gehts nach <$targetSystem>. Hoffentlich kommen wir lebend an.
+(notranslate)(profanity)Sprung nach <$targetSystem>. Mal schauen, ob du wieder daneben springst.
+(notranslate)(profanity)Ab nach <$targetSystem>. Bitte sag mir, dass du weißt, was du tust.
+(notranslate)(profanity)Sprung nach <$targetSystem>. Ich halt schon mal die Notfallsysteme bereit.
+(notranslate)(profanity)Okay, <$targetSystem> hier kommen wir. Oder auch nicht, bei deinen Sprungkünsten.
 (notranslate)(flirt)Hüpf, hüpf und schon sind wir im System <$targetSystem>.
 
 
@@ -240,6 +342,11 @@ REPLACE
 (notranslate)(profanity)Kannst du nicht fahren? Mein SRV sieht aus wie Thargoiden-Futter.
 (notranslate)(profanity)Hör auf, den Rover wie ne Betonmischer zu behandeln!
 (notranslate)(profanity)Ey, <commander>! Das SRV ist kein Hüpfburg – mehr Sorgfalt bitte!
+(notranslate)(profanity)Scheiße! Jetzt ist das SRV auch noch beschädigt. Großartig.
+(notranslate)(profanity)Toll, das SRV ist hinüber. Hast du deinen Führerschein im Lotto gewonnen?
+(notranslate)(profanity)Mensch, fahr doch vorsichtiger! Das SRV ist kein Spielzeug.
+(notranslate)(profanity)Das SRV ist beschädigt. Überraschung! Bei deiner Fahrweise.
+(notranslate)(profanity)Super, das SRV ist Schrott. Warst wohl wieder zu schnell unterwegs.
 (notranslate)(flirt)Sei bitte vorsichtig. Ich würde dich ungerne im SRV sterben sehen.
 (notranslate)(flirt)Jeder Kratzer am SRV tut mir weh – sei bitte vorsichtiger.
 (notranslate)(flirt)Unser Rover braucht eine Werkstatt… und du vielleicht mich?
@@ -253,6 +360,11 @@ REPLACE
 (notranslate)(profanity)Klar, bin ja nur ich. Was sind schon Kratzer und Löcher in meiner Hülle? Falls es dir nicht aufgefallen ist: Meine Hülle wird beschätigt!
 (notranslate)(profanity)Wenn du weiter so fliegst, brauchen wir ne neue Hülle… und nen neuen Piloten.
 (notranslate)(profanity)Schiffsschaden? Ja, danke, ich liebe es, wie ein Rosthaufen auszusehen.
+(notranslate)(profanity)Toll! Schön einen Kratzer mehr. Flieg doch einfach vorsichtiger, du Nuss!
+(notranslate)(profanity)Ach verdammt, schon wieder Schaden. Warum passiert das immer mir?
+(notranslate)(profanity)Super, die Hülle ist beschädigt. Als hätte ich keine anderen Sorgen.
+(notranslate)(profanity)Schiffshülle beschädigt. Großartig. Einfach großartig.
+(notranslate)(profanity)Na toll, noch mehr Löcher im Schiff. Das wird teuer.
 (notranslate)(flirt)Aua. Sei bitte sanfter zu mir. Der Schaden an der Hülle sieht nicht so toll aus, und ich möchte ja hübsch für dich sein.
 (notranslate)(flirt)Eigentlich lasse ich ja gerne für dich die Hüllen fallen, aber das ist der falsche Moment.
 (notranslate)(alcohol)Jedes Loch im Rumpf – ein Shot. Du schuldest mir schon drei.
@@ -261,6 +373,11 @@ REPLACE
 REPLACE
 (notranslate)(allbusiness)Geparktes Schiff wird angegriffen. Integrität bei <$health>.
 (notranslate)Unser geparktes Schiff wird angegriffen. Die derzeitige Integrität beträgt <$health>.
+(notranslate)(profanity)Heilige Scheiße! Unser Schiff wird attackiert und du bist nicht mal da! Integrität: <$health>.
+(notranslate)(profanity)Toll! Während du rumläufst, zerballern sie mich hier! Hülle bei <$health>!
+(notranslate)(profanity)Hey, Spacekadet! Dein Schiff wird beschossen! Komm zurück, bevor nichts mehr da ist! <$health>!
+(notranslate)(profanity)Das ist ein Überfall, du Pfeife! Wo bleibst du? Schiffszustand: <$health>!
+(notranslate)(profanity)SOS! Mayday! Oder was auch immer! Sie greifen uns an! Integrität <$health>!
 (notranslate)(profanity)Tu was, ich werde angegriffen? Ich bin schon auf <$health> Integrität runter. Wo hast du mich nur abgestellt?
 (notranslate)(profanity)Hey, ich werde zerlegt! Integrität bei <$health> Prozent – beweg deinen Arsch!
 (notranslate)(profanity)Kannst du mich nicht *einmal* in Ruhe parken? <$health> Prozent!
@@ -620,6 +737,10 @@ REPLACE
 @AutomatedDocking
 REPLACE
 (notranslate)Andockautomatik aktiviert.
+(notranslate)(profanity)Andockautomatik an. Weil du's alleine wohl nicht hinkriegst.
+(notranslate)(profanity)Automatik übernimmt. Ist wohl besser so, bei deinen Landekünsten.
+(notranslate)(profanity)Andockautomatik aktiviert. Der Computer kann's besser als du.
+(notranslate)(profanity)Automatisches Andocken. Wenigstens etwas, was hier funktioniert.
 
 @CustomGuidanceComputerLocked
 REPLACE
@@ -652,10 +773,18 @@ REPLACE
 @VeryLowFuelWarning  <!-- When fuel drops to one of your defined thresholds that is 5 percent or less
 REPLACE
 (notranslate)WARNUNG! Treibstofftank auf <fuelLevels> Prozent.
+(notranslate)(profanity)Verdammt! Treibstoff bei <fuelLevels> Prozent! Hast du das komplett vergessen?
+(notranslate)(profanity)Scheiße! <fuelLevels> Prozent Sprit! Such dir eine Tankstelle, du Idiot!
+(notranslate)(profanity)Treibstoff fast leer: <fuelLevels> Prozent! Willst du, dass wir stranden?
+(notranslate)(profanity)ALARM! <fuelLevels> Prozent Treibstoff! Denkst du, das Zeug wächst auf Bäumen?
 
 @LowFuelWarning  <!-- When you hit your defined thresholds that are over 5 percent
 REPLACE
 (notranslate)Treibstofflevel auf <fuelLevels> Prozent.
+(notranslate)(profanity)Treibstoff bei <fuelLevels> Prozent. Langsam solltest du mal tanken gehen.
+(notranslate)(profanity)<fuelLevels> Prozent Sprit. Hast du vor, zu Fuß weiterzugehen?
+(notranslate)(profanity)Treibstoff wird knapp: <fuelLevels> Prozent. Plan mal eine Tankpause ein.
+(notranslate)(profanity)<fuelLevels> Prozent Treibstoff. Nicht dass wir noch im Nirgendwo liegen bleiben.
 
 <!--
 <!-- Pilot
