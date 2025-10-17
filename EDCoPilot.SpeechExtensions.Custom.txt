@@ -30,19 +30,15 @@ REPLACE
 (notranslate)(allbusiness)Kommandant
 (notranslate)Boss
 (notranslate)(profanity)Sklaventreiber
-(notranslate)(profanity)Penner
-(notranslate)(profanity)Idiot
-(notranslate)(profanity)Möchtegern
 (notranslate)(profanity)Euer Lorschaft
 (notranslate)(profanity)Spacegorilla
-(notranslate)(profanity)Pfeife
-(notranslate)(profanity)Depp
-(notranslate)(profanity)Trottel
 (notranslate)(profanity)Spacecowboy
 (notranslate)(profanity)Kumpel
 (notranslate)(profanity)Alter
-(notranslate)(profanity)Mieser Typ
 (notranslate)(profanity)Honk
+(notranslate)(profanity)Barbara
+(notranslate)(profanity)Gertrude
+(notranslate)(profanity)Mister Verstappen
 (notranslate)(flirt)Schatz
 (notranslate)(flirt)Süßer
 (notranslate)(flirt)Liebster
