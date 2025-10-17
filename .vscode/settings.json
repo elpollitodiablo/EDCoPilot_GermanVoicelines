@@ -1,0 +1,32 @@
+{
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    {
+      "text": "profanity",
+      "color": "#ff0000",
+      "backgroundColor": "black",
+      "overviewRulerColor": "grey"
+    },
+
+    {
+      "text": "notranslate",
+      "color": "#00ff00",
+      "backgroundColor": "black",
+      "overviewRulerColor": "grey"
+    },
+    {
+      "text": "allbusiness",
+      "color": "#0066ff",
+      "backgroundColor": "black",
+      "overviewRulerColor": "grey"
+    },
+    {
+      "text": "flirt",
+      "color": "#ff6600",
+      "backgroundColor": "black",
+      "overviewRulerColor": "grey"
+    }
+  ],
+  "todohighlight.include": ["**/*.txt"]
+}
