@@ -69,6 +69,15 @@ REPLACE
 @AdditionalCommanderAddressNonGender <!-- Wird zusätzlich zu @DefaultCommanderAddress verwendet, wenn kein Geschlecht in den Optionen ausgewählt wurde.
 REPLACE
 
+@RandomShipName <!-- Wird verwendet um das Schiff ui referenzieren
+(notranslate)Raumschiff
+(notranslate)Schiff
+(notranslate)(profanity)Rostlaube
+(notranslate)(profanity)Kiste
+(notranslate)(profanity)Schrotthaufen
+(notranslate)(profanity)alte Betsy
+(notranslate)(flirt)Flitzer
+
 @ConfirmedCommander <!-- Als Bestätigung auf Befehle und Einstellungsänderungen
 REPLACE
 (notranslate)(allbusiness)Bestätigt.
